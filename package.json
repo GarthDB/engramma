@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm convert-tokens && vite build",
+    "convert-tokens": "tsx scripts/convert-spectrum-tokens.ts",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write .",
@@ -57,5 +58,10 @@
     "vite": "^7.2.4",
     "vitest": "^4.0.14",
     "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@adobe/spectrum-tokens": "^14.0.0",
+    "@types/node": "^25.0.2",
+    "tsx": "^4.21.0"
   }
 }
