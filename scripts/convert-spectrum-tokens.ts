@@ -16,12 +16,12 @@ const parseColor = (
 } | null => {
   // Trim whitespace
   const trimmed = colorString.trim();
-  
+
   // Match rgb(r, g, b) or rgba(r, g, b, a)
   const rgbaMatch = trimmed.match(
     /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(?:,\s*([\d.]+)\s*)?\)/,
   );
-  
+
   if (rgbaMatch) {
     const r = parseInt(rgbaMatch[1]) / 255;
     const g = parseInt(rgbaMatch[2]) / 255;
@@ -84,7 +84,7 @@ const parseFontWeight = (value: string): number | string => {
     black: 900,
     heavy: 900,
   };
-  
+
   return weightMap[value.toLowerCase()] || value;
 };
 
@@ -159,6 +159,42 @@ const convertToken = (
     };
   }
 
+  // Opacity tokens (numbers 0-1)
+  if (schema.includes("opacity.json") && value !== undefined) {
+    const numValue = typeof value === "string" ? parseFloat(value) : value;
+    if (!isNaN(numValue)) {
+      return {
+        $value: numValue,
+        $description: `Spectrum ${tokenName}`,
+      };
+    }
+  }
+
+  // Multiplier tokens (numbers for line-height, etc)
+  if (schema.includes("multiplier.json") && value !== undefined) {
+    const numValue = typeof value === "string" ? parseFloat(value) : value;
+    if (!isNaN(numValue)) {
+      return {
+        $value: numValue,
+        $description: `Spectrum ${tokenName}`,
+      };
+    }
+  }
+
+  // Scale set tokens (desktop/mobile variants) - use desktop
+  if (schema.includes("scale-set.json") && tokenData.sets?.desktop?.value) {
+    const desktopValue = tokenData.sets.desktop.value;
+    if (typeof desktopValue === "string") {
+      const dimValue = parseDimension(desktopValue);
+      if (dimValue) {
+        return {
+          $value: dimValue,
+          $description: `Spectrum ${tokenName} (desktop scale)`,
+        };
+      }
+    }
+  }
+
   return null;
 };
 
@@ -174,7 +210,7 @@ const processSourceFile = async (
     __dirname,
     `../node_modules/@adobe/spectrum-tokens/src/${fileName}`,
   );
-  
+
   const content = await readFile(filePath, "utf-8");
   const sourceTokens = JSON.parse(content);
 
@@ -216,24 +252,25 @@ const convertSpectrumTokens = async () => {
       allowPrivate: true, // Include private tokens for base palette
     },
     {
-      file: "semantic-color-palette.json",
-      name: "semanticColors",
-      type: "color",
-      description: "Semantic color tokens for common UI patterns",
-      allowPrivate: false,
-    },
-    {
       file: "color-aliases.json",
       name: "colorAliases",
       type: "color",
-      description: "Color aliases for specific design purposes",
+      description: "Color aliases and opacity values for design purposes",
+      allowPrivate: false,
+    },
+    {
+      file: "color-component.json",
+      name: "colorComponent",
+      type: "color",
+      description: "Component-specific color tokens",
       allowPrivate: false,
     },
     {
       file: "typography.json",
       name: "typography",
       type: "fontFamily",
-      description: "Typography tokens including fonts, weights, and text styles",
+      description:
+        "Typography tokens including fonts, weights, line-heights, and text styles",
       allowPrivate: false,
     },
     {
@@ -244,10 +281,17 @@ const convertSpectrumTokens = async () => {
       allowPrivate: false,
     },
     {
+      file: "layout-component.json",
+      name: "layoutComponent",
+      type: "dimension",
+      description: "Component-specific layout and sizing tokens",
+      allowPrivate: false,
+    },
+    {
       file: "icons.json",
       name: "icons",
       type: "dimension",
-      description: "Icon size tokens",
+      description: "Icon size and color tokens",
       allowPrivate: false,
     },
   ];
