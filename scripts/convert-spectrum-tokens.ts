@@ -14,10 +14,14 @@ const parseColor = (
   components: [number, number, number];
   alpha?: number;
 } | null => {
+  // Trim whitespace
+  const trimmed = colorString.trim();
+  
   // Match rgb(r, g, b) or rgba(r, g, b, a)
-  const rgbaMatch = colorString.match(
-    /rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/,
+  const rgbaMatch = trimmed.match(
+    /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(?:,\s*([\d.]+)\s*)?\)/,
   );
+  
   if (rgbaMatch) {
     const r = parseInt(rgbaMatch[1]) / 255;
     const g = parseInt(rgbaMatch[2]) / 255;
@@ -43,59 +47,6 @@ const parseColor = (
   return null;
 };
 
-// Determine token type based on name and value
-const inferTokenType = (
-  name: string,
-  value: string | number,
-): string | null => {
-  // Color patterns
-  if (
-    name.includes("color") ||
-    name.includes("background") ||
-    name.includes("border-color")
-  ) {
-    if (typeof value === "string" && value.startsWith("rgb")) {
-      return "color";
-    }
-  }
-
-  // Dimension patterns
-  if (
-    name.includes("size") ||
-    name.includes("width") ||
-    name.includes("height") ||
-    name.includes("spacing") ||
-    name.includes("gap") ||
-    name.includes("padding") ||
-    name.includes("margin")
-  ) {
-    if (typeof value === "string" && /\d+(px|rem|em)/.test(value)) {
-      return "dimension";
-    }
-  }
-
-  // Duration patterns
-  if (name.includes("duration") || name.includes("delay")) {
-    if (typeof value === "string" && /\d+(ms|s)/.test(value)) {
-      return "duration";
-    }
-  }
-
-  // Number patterns (opacity, weights, multipliers)
-  if (
-    name.includes("opacity") ||
-    name.includes("weight") ||
-    name.includes("multiplier") ||
-    name.includes("ratio")
-  ) {
-    if (typeof value === "string" && /^[\d.]+$/.test(value)) {
-      return "number";
-    }
-  }
-
-  return null;
-};
-
 // Parse dimension value
 const parseDimension = (
   value: string,
@@ -115,158 +66,213 @@ const parseDimension = (
   return null;
 };
 
-// Parse duration value
-const parseDuration = (
-  value: string,
-): {
-  value: number;
-  unit: "ms" | "s";
-} | null => {
-  const match = value.match(/^([\d.]+)(ms|s)$/);
-  if (match) {
+// Parse font weight strings
+const parseFontWeight = (value: string): number | string => {
+  const weightMap: Record<string, number> = {
+    thin: 100,
+    "extra-light": 200,
+    "ultra-light": 200,
+    light: 300,
+    regular: 400,
+    normal: 400,
+    medium: 500,
+    "semi-bold": 600,
+    "demi-bold": 600,
+    bold: 700,
+    "extra-bold": 800,
+    "ultra-bold": 800,
+    black: 900,
+    heavy: 900,
+  };
+  
+  return weightMap[value.toLowerCase()] || value;
+};
+
+// Convert a single token based on its schema type
+const convertToken = (
+  tokenName: string,
+  tokenData: any,
+  allowPrivate = false,
+): any | null => {
+  // Skip private tokens unless explicitly allowed
+  if (tokenData.private && !allowPrivate) {
+    return null;
+  }
+
+  // Skip deprecated tokens
+  if (tokenData.deprecated) {
+    return null;
+  }
+
+  const value = tokenData.value;
+  const schema = tokenData.$schema || "";
+
+  // Color set tokens (theme-specific colors) - use light theme
+  if (schema.includes("color-set.json") && tokenData.sets?.light?.value) {
+    const lightValue = tokenData.sets.light.value;
+    if (typeof lightValue === "string") {
+      const colorValue = parseColor(lightValue);
+      if (colorValue) {
+        return {
+          $value: colorValue,
+          $description: `Spectrum ${tokenName} (light theme)`,
+        };
+      }
+    }
+  }
+
+  // Color tokens
+  if (schema.includes("color.json") && typeof value === "string") {
+    const colorValue = parseColor(value);
+    if (colorValue) {
+      return {
+        $value: colorValue,
+        $description: `Spectrum ${tokenName}`,
+      };
+    }
+  }
+
+  // Dimension tokens (px, rem, em)
+  if (schema.includes("dimension.json") && typeof value === "string") {
+    const dimValue = parseDimension(value);
+    if (dimValue) {
+      return {
+        $value: dimValue,
+        $description: `Spectrum ${tokenName}`,
+      };
+    }
+  }
+
+  // Font family tokens
+  if (schema.includes("font-family.json") && typeof value === "string") {
     return {
-      value: parseFloat(match[1]),
-      unit: match[2] as "ms" | "s",
+      $value: value,
+      $description: `Spectrum ${tokenName}`,
     };
   }
+
+  // Font weight tokens
+  if (schema.includes("font-weight.json")) {
+    return {
+      $value: parseFontWeight(String(value)),
+      $description: `Spectrum ${tokenName}`,
+    };
+  }
+
   return null;
 };
 
-const convertSpectrumTokens = async () => {
-  console.log("🎨 Converting Spectrum tokens to engramma format...");
-
-  // Read Spectrum tokens from the JSON file
-  const tokensPath = resolve(
+// Process a source file and convert its tokens
+const processSourceFile = async (
+  fileName: string,
+  categoryName: string,
+  categoryType: string,
+  categoryDescription: string,
+  allowPrivate = false,
+): Promise<{ category: any; count: number }> => {
+  const filePath = resolve(
     __dirname,
-    "../node_modules/@adobe/spectrum-tokens/dist/json/variables.json",
+    `../node_modules/@adobe/spectrum-tokens/src/${fileName}`,
   );
-  const tokensContent = await readFile(tokensPath, "utf-8");
-  const spectrumTokens = JSON.parse(tokensContent);
-  console.log(
-    `📦 Loaded ${Object.keys(spectrumTokens).length} Spectrum tokens`,
-  );
+  
+  const content = await readFile(filePath, "utf-8");
+  const sourceTokens = JSON.parse(content);
 
-  // Organize tokens by type
-  const engrammaTokens: Record<string, any> = {
-    colors: {
-      $type: "color",
-      $description: "Spectrum color tokens",
-    },
-    dimensions: {
-      $type: "dimension",
-      $description: "Spectrum dimension tokens",
-    },
-    durations: {
-      $type: "duration",
-      $description: "Spectrum duration tokens",
-    },
-    numbers: {
-      $type: "number",
-      $description: "Spectrum numeric tokens",
-    },
+  const category: any = {
+    $type: categoryType,
+    $description: categoryDescription,
   };
 
-  let stats = {
-    colors: 0,
-    dimensions: 0,
-    durations: 0,
-    numbers: 0,
-    skipped: 0,
-  };
+  let count = 0;
 
-  // Convert tokens
-  for (const [tokenName, tokenData] of Object.entries(spectrumTokens)) {
-    // Skip deprecated tokens
-    if ((tokenData as any).deprecated) {
-      stats.skipped++;
-      continue;
-    }
-
-    // Get the value - prefer light theme if sets exist, otherwise use direct value
-    let value: string | number | undefined;
-    if ((tokenData as any).sets && (tokenData as any).sets.light) {
-      value = (tokenData as any).sets.light.value;
-    } else if ((tokenData as any).value) {
-      value = (tokenData as any).value;
-    }
-
-    if (!value) {
-      stats.skipped++;
-      continue;
-    }
-
-    // Determine token type and convert
-    const tokenType = inferTokenType(tokenName, value);
-
-    if (tokenType === "color" && typeof value === "string") {
-      const colorValue = parseColor(value);
-      if (colorValue) {
-        // Create a clean token name (replace hyphens with camelCase)
-        const cleanName = tokenName.replace(/-([a-z])/g, (g) =>
-          g[1].toUpperCase(),
-        );
-        engrammaTokens.colors[cleanName] = {
-          $value: colorValue,
-          $description: `Spectrum ${tokenName}`,
-        };
-        stats.colors++;
-      } else {
-        stats.skipped++;
-      }
-    } else if (tokenType === "dimension" && typeof value === "string") {
-      const dimValue = parseDimension(value);
-      if (dimValue) {
-        const cleanName = tokenName.replace(/-([a-z])/g, (g) =>
-          g[1].toUpperCase(),
-        );
-        engrammaTokens.dimensions[cleanName] = {
-          $value: dimValue,
-          $description: `Spectrum ${tokenName}`,
-        };
-        stats.dimensions++;
-      } else {
-        stats.skipped++;
-      }
-    } else if (tokenType === "duration" && typeof value === "string") {
-      const durValue = parseDuration(value);
-      if (durValue) {
-        const cleanName = tokenName.replace(/-([a-z])/g, (g) =>
-          g[1].toUpperCase(),
-        );
-        engrammaTokens.durations[cleanName] = {
-          $value: durValue,
-          $description: `Spectrum ${tokenName}`,
-        };
-        stats.durations++;
-      } else {
-        stats.skipped++;
-      }
-    } else if (tokenType === "number") {
-      const numValue = typeof value === "string" ? parseFloat(value) : value;
-      if (!isNaN(numValue)) {
-        const cleanName = tokenName.replace(/-([a-z])/g, (g) =>
-          g[1].toUpperCase(),
-        );
-        engrammaTokens.numbers[cleanName] = {
-          $value: numValue,
-          $description: `Spectrum ${tokenName}`,
-        };
-        stats.numbers++;
-      } else {
-        stats.skipped++;
-      }
-    } else {
-      stats.skipped++;
+  for (const [tokenName, tokenData] of Object.entries(sourceTokens)) {
+    const converted = convertToken(tokenName, tokenData, allowPrivate);
+    if (converted) {
+      // Create a clean token name (replace hyphens with camelCase)
+      const cleanName = tokenName.replace(/-([a-z0-9])/g, (g) =>
+        g[1].toUpperCase(),
+      );
+      category[cleanName] = converted;
+      count++;
     }
   }
 
-  // Remove empty groups
-  Object.keys(engrammaTokens).forEach((group) => {
-    if (Object.keys(engrammaTokens[group]).length === 2) {
-      // Only has $type and $description
-      delete engrammaTokens[group];
+  return { category, count };
+};
+
+const convertSpectrumTokens = async () => {
+  console.log("🎨 Converting Spectrum tokens to engramma format...\n");
+
+  const engrammaTokens: Record<string, any> = {};
+  const stats: Record<string, number> = {};
+
+  // Define source files and their corresponding categories
+  const sources = [
+    {
+      file: "color-palette.json",
+      name: "colorPalette",
+      type: "color",
+      description: "Spectrum base color palette with numeric scales",
+      allowPrivate: true, // Include private tokens for base palette
+    },
+    {
+      file: "semantic-color-palette.json",
+      name: "semanticColors",
+      type: "color",
+      description: "Semantic color tokens for common UI patterns",
+      allowPrivate: false,
+    },
+    {
+      file: "color-aliases.json",
+      name: "colorAliases",
+      type: "color",
+      description: "Color aliases for specific design purposes",
+      allowPrivate: false,
+    },
+    {
+      file: "typography.json",
+      name: "typography",
+      type: "fontFamily",
+      description: "Typography tokens including fonts, weights, and text styles",
+      allowPrivate: false,
+    },
+    {
+      file: "layout.json",
+      name: "layout",
+      type: "dimension",
+      description: "Layout tokens including spacing, corner radius, and sizing",
+      allowPrivate: false,
+    },
+    {
+      file: "icons.json",
+      name: "icons",
+      type: "dimension",
+      description: "Icon size tokens",
+      allowPrivate: false,
+    },
+  ];
+
+  // Process each source file
+  for (const source of sources) {
+    try {
+      const { category, count } = await processSourceFile(
+        source.file,
+        source.name,
+        source.type,
+        source.description,
+        source.allowPrivate,
+      );
+
+      // Only add category if it has tokens beyond metadata
+      if (Object.keys(category).length > 2) {
+        engrammaTokens[source.name] = category;
+        stats[source.name] = count;
+        console.log(`✓ ${source.name}: ${count} tokens`);
+      }
+    } catch (error) {
+      console.log(`✗ ${source.name}: Error processing file`);
     }
-  });
+  }
 
   // Write to file
   const outputPath = resolve(
@@ -277,12 +283,10 @@ const convertSpectrumTokens = async () => {
   await writeFile(outputPath, JSON.stringify(engrammaTokens, null, 2));
 
   console.log("\n✅ Conversion complete!");
-  console.log(`📊 Statistics:`);
-  console.log(`   - Colors: ${stats.colors}`);
-  console.log(`   - Dimensions: ${stats.dimensions}`);
-  console.log(`   - Durations: ${stats.durations}`);
-  console.log(`   - Numbers: ${stats.numbers}`);
-  console.log(`   - Skipped: ${stats.skipped}`);
+  console.log(`📊 Total categories: ${Object.keys(engrammaTokens).length}`);
+  console.log(
+    `📊 Total tokens: ${Object.values(stats).reduce((a, b) => a + b, 0)}`,
+  );
   console.log(`\n📁 Output: ${outputPath}`);
 };
 

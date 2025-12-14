@@ -1,2897 +1,4424 @@
 {
-  "colors": {
+  "colorPalette": {
     "$type": "color",
-    "$description": "Spectrum color tokens",
-    "focusIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.29411764705882354, 0.4588235294117647, 1]
-      },
-      "$description": "Spectrum focus-indicator-color"
-    },
-    "staticWhiteFocusIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1]
-      },
-      "$description": "Spectrum static-white-focus-indicator-color"
-    },
-    "staticBlackFocusIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum static-black-focus-indicator-color"
-    },
-    "overlayColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum overlay-color"
-    },
-    "dropShadowColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.12
-      },
-      "$description": "Spectrum drop-shadow-color"
-    },
-    "backgroundBaseColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1]
-      },
-      "$description": "Spectrum background-base-color"
-    },
-    "backgroundLayer-1Color": {
+    "$description": "Spectrum base color palette with numeric scales",
+    "white": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.9725490196078431, 0.9725490196078431, 0.9725490196078431
+          1,
+          1,
+          1
         ]
       },
-      "$description": "Spectrum background-layer-1-color"
+      "$description": "Spectrum white"
     },
-    "neutralBackgroundColorDefault": {
+    "transparentWhite25": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0
       },
-      "$description": "Spectrum neutral-background-color-default"
+      "$description": "Spectrum transparent-white-25"
     },
-    "neutralBackgroundColorHover": {
+    "transparentWhite50": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.04
       },
-      "$description": "Spectrum neutral-background-color-hover"
+      "$description": "Spectrum transparent-white-50"
     },
-    "neutralBackgroundColorDown": {
+    "transparentWhite75": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.07
       },
-      "$description": "Spectrum neutral-background-color-down"
+      "$description": "Spectrum transparent-white-75"
     },
-    "neutralBackgroundColorKeyFocus": {
+    "transparentWhite100": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-background-color-key-focus"
-    },
-    "neutralBackgroundColorSelectedDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum neutral-background-color-selected-default"
-    },
-    "neutralBackgroundColorSelectedHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-background-color-selected-hover"
-    },
-    "neutralBackgroundColorSelectedDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-background-color-selected-down"
-    },
-    "neutralBackgroundColorSelectedKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-background-color-selected-key-focus"
-    },
-    "neutralSubduedContentColorSelected": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum neutral-subdued-content-color-selected"
-    },
-    "accentContentColorSelected": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum accent-content-color-selected"
-    },
-    "disabledBackgroundColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum disabled-background-color"
-    },
-    "disabledStaticWhiteBackgroundColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
+          1,
+          1,
+          1
+        ],
         "alpha": 0.11
       },
-      "$description": "Spectrum disabled-static-white-background-color"
+      "$description": "Spectrum transparent-white-100"
     },
-    "disabledStaticBlackBackgroundColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.09
-      },
-      "$description": "Spectrum disabled-static-black-background-color"
-    },
-    "neutralContentColorDefault": {
+    "transparentWhite200": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.14
       },
-      "$description": "Spectrum neutral-content-color-default"
+      "$description": "Spectrum transparent-white-200"
     },
-    "neutralContentColorHover": {
+    "transparentWhite300": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.17
       },
-      "$description": "Spectrum neutral-content-color-hover"
+      "$description": "Spectrum transparent-white-300"
     },
-    "neutralContentColorDown": {
+    "transparentWhite400": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-content-color-down"
-    },
-    "neutralContentColorFocusHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-content-color-focus-hover"
-    },
-    "neutralContentColorFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-content-color-focus"
-    },
-    "neutralContentColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum neutral-content-color-key-focus"
-    },
-    "neutralSubduedContentColorDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.3137254901960784, 0.3137254901960784, 0.3137254901960784
-        ]
-      },
-      "$description": "Spectrum neutral-subdued-content-color-default"
-    },
-    "neutralSubduedContentColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum neutral-subdued-content-color-hover"
-    },
-    "neutralSubduedContentColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum neutral-subdued-content-color-down"
-    },
-    "neutralSubduedContentColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum neutral-subdued-content-color-key-focus"
-    },
-    "accentContentColorDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.23137254901960785, 0.38823529411764707, 0.984313725490196
-        ]
-      },
-      "$description": "Spectrum accent-content-color-default"
-    },
-    "accentContentColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum accent-content-color-hover"
-    },
-    "accentContentColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum accent-content-color-down"
-    },
-    "accentContentColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum accent-content-color-key-focus"
-    },
-    "negativeContentColorDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8431372549019608, 0.19607843137254902, 0.12549019607843137
-        ]
-      },
-      "$description": "Spectrum negative-content-color-default"
-    },
-    "negativeContentColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-content-color-hover"
-    },
-    "negativeContentColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-content-color-down"
-    },
-    "negativeContentColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-content-color-key-focus"
-    },
-    "disabledContentColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7764705882352941, 0.7764705882352941, 0.7764705882352941
-        ]
-      },
-      "$description": "Spectrum disabled-content-color"
-    },
-    "disabledStaticWhiteContentColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
+          1,
+          1,
+          1
+        ],
         "alpha": 0.21
       },
-      "$description": "Spectrum disabled-static-white-content-color"
+      "$description": "Spectrum transparent-white-400"
     },
-    "disabledStaticBlackContentColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.22
-      },
-      "$description": "Spectrum disabled-static-black-content-color"
-    },
-    "disabledBorderColor": {
+    "transparentWhite500": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.8549019607843137, 0.8549019607843137, 0.8549019607843137
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.39
       },
-      "$description": "Spectrum disabled-border-color"
+      "$description": "Spectrum transparent-white-500"
     },
-    "disabledStaticWhiteBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
-        "alpha": 0.17
-      },
-      "$description": "Spectrum disabled-static-white-border-color"
-    },
-    "disabledStaticBlackBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.15
-      },
-      "$description": "Spectrum disabled-static-black-border-color"
-    },
-    "negativeBorderColorDefault": {
+    "transparentWhite600": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.8431372549019608, 0.19607843137254902, 0.12549019607843137
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.51
       },
-      "$description": "Spectrum negative-border-color-default"
+      "$description": "Spectrum transparent-white-600"
     },
-    "negativeBorderColorHover": {
+    "transparentWhite700": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.66
       },
-      "$description": "Spectrum negative-border-color-hover"
+      "$description": "Spectrum transparent-white-700"
     },
-    "negativeBorderColorDown": {
+    "transparentWhite800": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.611764705882353, 0.12941176470588237, 0.07450980392156863
-        ]
+          1,
+          1,
+          1
+        ],
+        "alpha": 0.85
       },
-      "$description": "Spectrum negative-border-color-down"
+      "$description": "Spectrum transparent-white-800"
     },
-    "negativeBorderColorFocusHover": {
+    "transparentWhite900": {
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.611764705882353, 0.12941176470588237, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum negative-border-color-focus-hover"
-    },
-    "negativeBorderColorFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-border-color-focus"
-    },
-    "negativeBorderColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-border-color-key-focus"
-    },
-    "titleColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum title-color"
-    },
-    "dropShadowColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.12
-      },
-      "$description": "Spectrum drop-shadow-color-100"
-    },
-    "dropShadowColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.16
-      },
-      "$description": "Spectrum drop-shadow-color-200"
-    },
-    "dropShadowColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.2
-      },
-      "$description": "Spectrum drop-shadow-color-300"
-    },
-    "dropShadowEmphasizedDefaultColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.12
-      },
-      "$description": "Spectrum drop-shadow-emphasized-default-color"
-    },
-    "dropShadowEmphasizedHoverColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.16
-      },
-      "$description": "Spectrum drop-shadow-emphasized-hover-color"
-    },
-    "dropShadowElevatedColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.16
-      },
-      "$description": "Spectrum drop-shadow-elevated-color"
-    },
-    "staticBlackTextColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum static-black-text-color"
-    },
-    "staticWhiteTextColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1]
-      },
-      "$description": "Spectrum static-white-text-color"
-    },
-    "trackColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8549019607843137, 0.8549019607843137, 0.8549019607843137
-        ]
-      },
-      "$description": "Spectrum track-color"
-    },
-    "staticBlackTrackColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.15
-      },
-      "$description": "Spectrum static-black-track-color"
-    },
-    "staticWhiteTrackColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
-        "alpha": 0.17
-      },
-      "$description": "Spectrum static-white-track-color"
-    },
-    "staticBlackTrackIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.93
-      },
-      "$description": "Spectrum static-black-track-indicator-color"
-    },
-    "staticWhiteTrackIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
+          1,
+          1,
+          1
+        ],
         "alpha": 0.94
       },
-      "$description": "Spectrum static-white-track-indicator-color"
+      "$description": "Spectrum transparent-white-900"
     },
-    "dropShadowDraggedColor": {
+    "transparentWhite1000": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          1,
+          1,
+          1
+        ]
+      },
+      "$description": "Spectrum transparent-white-1000"
+    },
+    "black": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ]
+      },
+      "$description": "Spectrum black"
+    },
+    "transparentBlack25": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0
+      },
+      "$description": "Spectrum transparent-black-25"
+    },
+    "transparentBlack50": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.03
+      },
+      "$description": "Spectrum transparent-black-50"
+    },
+    "transparentBlack75": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.05
+      },
+      "$description": "Spectrum transparent-black-75"
+    },
+    "transparentBlack100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.09
+      },
+      "$description": "Spectrum transparent-black-100"
+    },
+    "transparentBlack200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.12
+      },
+      "$description": "Spectrum transparent-black-200"
+    },
+    "transparentBlack300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.15
+      },
+      "$description": "Spectrum transparent-black-300"
+    },
+    "transparentBlack400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.22
+      },
+      "$description": "Spectrum transparent-black-400"
+    },
+    "transparentBlack500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.44
+      },
+      "$description": "Spectrum transparent-black-500"
+    },
+    "transparentBlack600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.56
+      },
+      "$description": "Spectrum transparent-black-600"
+    },
+    "transparentBlack700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.69
+      },
+      "$description": "Spectrum transparent-black-700"
+    },
+    "transparentBlack800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.84
+      },
+      "$description": "Spectrum transparent-black-800"
+    },
+    "transparentBlack900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.93
+      },
+      "$description": "Spectrum transparent-black-900"
+    },
+    "transparentBlack1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ]
+      },
+      "$description": "Spectrum transparent-black-1000"
+    },
+    "gray25": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ]
+      },
+      "$description": "Spectrum gray-25 (light theme)"
+    },
+    "gray50": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9725490196078431,
+          0.9725490196078431,
+          0.9725490196078431
+        ]
+      },
+      "$description": "Spectrum gray-50 (light theme)"
+    },
+    "gray75": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9529411764705882,
+          0.9529411764705882,
+          0.9529411764705882
+        ]
+      },
+      "$description": "Spectrum gray-75 (light theme)"
+    },
+    "gray100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9137254901960784,
+          0.9137254901960784,
+          0.9137254901960784
+        ]
+      },
+      "$description": "Spectrum gray-100 (light theme)"
+    },
+    "gray200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8823529411764706,
+          0.8823529411764706,
+          0.8823529411764706
+        ]
+      },
+      "$description": "Spectrum gray-200 (light theme)"
+    },
+    "gray300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8549019607843137,
+          0.8549019607843137,
+          0.8549019607843137
+        ]
+      },
+      "$description": "Spectrum gray-300 (light theme)"
+    },
+    "gray400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7764705882352941,
+          0.7764705882352941,
+          0.7764705882352941
+        ]
+      },
+      "$description": "Spectrum gray-400 (light theme)"
+    },
+    "gray500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5607843137254902,
+          0.5607843137254902,
+          0.5607843137254902
+        ]
+      },
+      "$description": "Spectrum gray-500 (light theme)"
+    },
+    "gray600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.44313725490196076,
+          0.44313725490196076,
+          0.44313725490196076
+        ]
+      },
+      "$description": "Spectrum gray-600 (light theme)"
+    },
+    "gray700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3137254901960784,
+          0.3137254901960784,
+          0.3137254901960784
+        ]
+      },
+      "$description": "Spectrum gray-700 (light theme)"
+    },
+    "gray800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1607843137254902,
+          0.1607843137254902,
+          0.1607843137254902
+        ]
+      },
+      "$description": "Spectrum gray-800 (light theme)"
+    },
+    "gray900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07450980392156863,
+          0.07450980392156863,
+          0.07450980392156863
+        ]
+      },
+      "$description": "Spectrum gray-900 (light theme)"
+    },
+    "gray1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ]
+      },
+      "$description": "Spectrum gray-1000 (light theme)"
+    },
+    "blue100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9607843137254902,
+          0.9764705882352941,
+          1
+        ]
+      },
+      "$description": "Spectrum blue-100 (light theme)"
+    },
+    "blue200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392156862745,
+          0.9411764705882353,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum blue-200 (light theme)"
+    },
+    "blue300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.796078431372549,
+          0.8862745098039215,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum blue-300 (light theme)"
+    },
+    "blue400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6745098039215687,
+          0.8117647058823529,
+          0.9921568627450981
+        ]
+      },
+      "$description": "Spectrum blue-400 (light theme)"
+    },
+    "blue500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5568627450980392,
+          0.7254901960784313,
+          0.9882352941176471
+        ]
+      },
+      "$description": "Spectrum blue-500 (light theme)"
+    },
+    "blue600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4470588235294118,
+          0.6196078431372549,
+          0.9921568627450981
+        ]
+      },
+      "$description": "Spectrum blue-600 (light theme)"
+    },
+    "blue700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.36470588235294116,
+          0.5372549019607843,
+          1
+        ]
+      },
+      "$description": "Spectrum blue-700 (light theme)"
+    },
+    "blue800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.29411764705882354,
+          0.4588235294117647,
+          1
+        ]
+      },
+      "$description": "Spectrum blue-800 (light theme)"
+    },
+    "blue900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.23137254901960785,
+          0.38823529411764707,
+          0.984313725490196
+        ]
+      },
+      "$description": "Spectrum blue-900 (light theme)"
+    },
+    "blue1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.15294117647058825,
+          0.30196078431372547,
+          0.9176470588235294
+        ]
+      },
+      "$description": "Spectrum blue-1000 (light theme)"
+    },
+    "blue1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.11372549019607843,
+          0.24313725490196078,
+          0.8117647058823529
+        ]
+      },
+      "$description": "Spectrum blue-1100 (light theme)"
+    },
+    "blue1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.08235294117647059,
+          0.19607843137254902,
+          0.6784313725490196
+        ]
+      },
+      "$description": "Spectrum blue-1200 (light theme)"
+    },
+    "blue1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.06274509803921569,
+          0.1568627450980392,
+          0.5490196078431373
+        ]
+      },
+      "$description": "Spectrum blue-1300 (light theme)"
+    },
+    "blue1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.047058823529411764,
+          0.12156862745098039,
+          0.4117647058823529
+        ]
+      },
+      "$description": "Spectrum blue-1400 (light theme)"
+    },
+    "blue1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.054901960784313725,
+          0.09411764705882353,
+          0.2627450980392157
+        ]
+      },
+      "$description": "Spectrum blue-1500 (light theme)"
+    },
+    "blue1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.027450980392156862,
+          0.043137254901960784,
+          0.11764705882352941
+        ]
+      },
+      "$description": "Spectrum blue-1600 (light theme)"
+    },
+    "red100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9647058823529412,
+          0.9607843137254902
+        ]
+      },
+      "$description": "Spectrum red-100 (light theme)"
+    },
+    "red200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9215686274509803,
+          0.9098039215686274
+        ]
+      },
+      "$description": "Spectrum red-200 (light theme)"
+    },
+    "red300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8392156862745098,
+          0.8196078431372549
+        ]
+      },
+      "$description": "Spectrum red-300 (light theme)"
+    },
+    "red400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7372549019607844,
+          0.7058823529411765
+        ]
+      },
+      "$description": "Spectrum red-400 (light theme)"
+    },
+    "red500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.615686274509804,
+          0.5686274509803921
+        ]
+      },
+      "$description": "Spectrum red-500 (light theme)"
+    },
+    "red600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.4627450980392157,
+          0.396078431372549
+        ]
+      },
+      "$description": "Spectrum red-600 (light theme)"
+    },
+    "red700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.3176470588235294,
+          0.23921568627450981
+        ]
+      },
+      "$description": "Spectrum red-700 (light theme)"
+    },
+    "red800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9411764705882353,
+          0.2196078431372549,
+          0.13725490196078433
+        ]
+      },
+      "$description": "Spectrum red-800 (light theme)"
+    },
+    "red900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8431372549019608,
+          0.19607843137254902,
+          0.12549019607843137
+        ]
+      },
+      "$description": "Spectrum red-900 (light theme)"
+    },
+    "red1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7176470588235294,
+          0.1568627450980392,
+          0.09411764705882353
+        ]
+      },
+      "$description": "Spectrum red-1000 (light theme)"
+    },
+    "red1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.611764705882353,
+          0.12941176470588237,
+          0.07450980392156863
+        ]
+      },
+      "$description": "Spectrum red-1100 (light theme)"
+    },
+    "red1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5058823529411764,
+          0.10588235294117647,
+          0.054901960784313725
+        ]
+      },
+      "$description": "Spectrum red-1200 (light theme)"
+    },
+    "red1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.40784313725490196,
+          0.08235294117647059,
+          0.0392156862745098
+        ]
+      },
+      "$description": "Spectrum red-1300 (light theme)"
+    },
+    "red1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3137254901960784,
+          0.06274509803921569,
+          0.023529411764705882
+        ]
+      },
+      "$description": "Spectrum red-1400 (light theme)"
+    },
+    "red1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.23137254901960785,
+          0.043137254901960784,
+          0.01568627450980392
+        ]
+      },
+      "$description": "Spectrum red-1500 (light theme)"
+    },
+    "red1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.11372549019607843,
+          0.0196078431372549,
+          0.00784313725490196
+        ]
+      },
+      "$description": "Spectrum red-1600 (light theme)"
+    },
+    "orange100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9647058823529412,
+          0.9058823529411765
+        ]
+      },
+      "$description": "Spectrum orange-100 (light theme)"
+    },
+    "orange200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9254901960784314,
+          0.8117647058823529
+        ]
+      },
+      "$description": "Spectrum orange-200 (light theme)"
+    },
+    "orange300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8549019607843137,
+          0.6196078431372549
+        ]
+      },
+      "$description": "Spectrum orange-300 (light theme)"
+    },
+    "orange400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7568627450980392,
+          0.3686274509803922
+        ]
+      },
+      "$description": "Spectrum orange-400 (light theme)"
+    },
+    "orange500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.6352941176470588,
+          0.07450980392156863
+        ]
+      },
+      "$description": "Spectrum orange-500 (light theme)"
+    },
+    "orange600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9882352941176471,
+          0.49019607843137253,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-600 (light theme)"
+    },
+    "orange700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9098039215686274,
+          0.41568627450980394,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-700 (light theme)"
+    },
+    "orange800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8313725490196079,
+          0.3568627450980392,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-800 (light theme)"
+    },
+    "orange900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7607843137254902,
+          0.3058823529411765,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-900 (light theme)"
+    },
+    "orange1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6549019607843137,
+          0.24313725490196078,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1000 (light theme)"
+    },
+    "orange1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5647058823529412,
+          0.2,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1100 (light theme)"
+    },
+    "orange1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4627450980392157,
+          0.1607843137254902,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1200 (light theme)"
+    },
+    "orange1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.37254901960784315,
+          0.12549019607843137,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1300 (light theme)"
+    },
+    "orange1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.28627450980392155,
+          0.09411764705882353,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1400 (light theme)"
+    },
+    "orange1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392156862745098,
+          0.07058823529411765,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1500 (light theme)"
+    },
+    "orange1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09803921568627451,
+          0.03137254901960784,
+          0
+        ]
+      },
+      "$description": "Spectrum orange-1600 (light theme)"
+    },
+    "yellow100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9725490196078431,
+          0.8
+        ]
+      },
+      "$description": "Spectrum yellow-100 (light theme)"
+    },
+    "yellow200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9450980392156862,
+          0.592156862745098
+        ]
+      },
+      "$description": "Spectrum yellow-200 (light theme)"
+    },
+    "yellow300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8705882352941177,
+          0.17254901960784313
+        ]
+      },
+      "$description": "Spectrum yellow-300 (light theme)"
+    },
+    "yellow400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9607843137254902,
+          0.7803921568627451,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-400 (light theme)"
+    },
+    "yellow500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9019607843137255,
+          0.6862745098039216,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-500 (light theme)"
+    },
+    "yellow600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8235294117647058,
+          0.5843137254901961,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-600 (light theme)"
+    },
+    "yellow700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7568627450980392,
+          0.5137254901960784,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-700 (light theme)"
+    },
+    "yellow800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6862745098039216,
+          0.4549019607843137,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-800 (light theme)"
+    },
+    "yellow900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6196078431372549,
+          0.4,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-900 (light theme)"
+    },
+    "yellow1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5254901960784314,
+          0.3333333333333333,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1000 (light theme)"
+    },
+    "yellow1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4470588235294118,
+          0.2823529411764706,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1100 (light theme)"
+    },
+    "yellow1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.36470588235294116,
+          0.23137254901960785,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1200 (light theme)"
+    },
+    "yellow1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.29411764705882354,
+          0.1843137254901961,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1300 (light theme)"
+    },
+    "yellow1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2196078431372549,
+          0.13725490196078433,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1400 (light theme)"
+    },
+    "yellow1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1568627450980392,
+          0.09803921568627451,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1500 (light theme)"
+    },
+    "yellow1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07058823529411765,
+          0.043137254901960784,
+          0
+        ]
+      },
+      "$description": "Spectrum yellow-1600 (light theme)"
+    },
+    "chartreuse100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9647058823529412,
+          0.984313725490196,
+          0.8705882352941177
+        ]
+      },
+      "$description": "Spectrum chartreuse-100 (light theme)"
+    },
+    "chartreuse200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9176470588235294,
+          0.9647058823529412,
+          0.6784313725490196
+        ]
+      },
+      "$description": "Spectrum chartreuse-200 (light theme)"
+    },
+    "chartreuse300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8156862745098039,
+          0.9254901960784314,
+          0.27450980392156865
+        ]
+      },
+      "$description": "Spectrum chartreuse-300 (light theme)"
+    },
+    "chartreuse400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7137254901960784,
+          0.8588235294117647,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-400 (light theme)"
+    },
+    "chartreuse500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6392156862745098,
+          0.7686274509803922,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-500 (light theme)"
+    },
+    "chartreuse600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5607843137254902,
+          0.6745098039215687,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-600 (light theme)"
+    },
+    "chartreuse700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5019607843137255,
+          0.6,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-700 (light theme)"
+    },
+    "chartreuse800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4470588235294118,
+          0.5372549019607843,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-800 (light theme)"
+    },
+    "chartreuse900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4,
+          0.47843137254901963,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-900 (light theme)"
+    },
+    "chartreuse1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.33725490196078434,
+          0.403921568627451,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1000 (light theme)"
+    },
+    "chartreuse1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.28627450980392155,
+          0.3411764705882353,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1100 (light theme)"
+    },
+    "chartreuse1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.23529411764705882,
+          0.2784313725490196,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1200 (light theme)"
+    },
+    "chartreuse1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1843137254901961,
+          0.2235294117647059,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1300 (light theme)"
+    },
+    "chartreuse1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.13725490196078433,
+          0.16862745098039217,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1400 (light theme)"
+    },
+    "chartreuse1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09803921568627451,
+          0.11764705882352941,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1500 (light theme)"
+    },
+    "chartreuse1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.043137254901960784,
+          0.054901960784313725,
+          0
+        ]
+      },
+      "$description": "Spectrum chartreuse-1600 (light theme)"
+    },
+    "celery100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9215686274509803,
+          1,
+          0.8627450980392157
+        ]
+      },
+      "$description": "Spectrum celery-100 (light theme)"
+    },
+    "celery200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7725490196078432,
+          1,
+          0.611764705882353
+        ]
+      },
+      "$description": "Spectrum celery-200 (light theme)"
+    },
+    "celery300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.615686274509804,
+          0.9686274509803922,
+          0.3607843137254902
+        ]
+      },
+      "$description": "Spectrum celery-300 (light theme)"
+    },
+    "celery400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5058823529411764,
+          0.8941176470588236,
+          0.22745098039215686
+        ]
+      },
+      "$description": "Spectrum celery-400 (light theme)"
+    },
+    "celery500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.43137254901960786,
+          0.807843137254902,
+          0.16470588235294117
+        ]
+      },
+      "$description": "Spectrum celery-500 (light theme)"
+    },
+    "celery600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.36470588235294116,
+          0.7058823529411765,
+          0.12156862745098039
+        ]
+      },
+      "$description": "Spectrum celery-600 (light theme)"
+    },
+    "celery700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3215686274509804,
+          0.6313725490196078,
+          0.09803921568627451
+        ]
+      },
+      "$description": "Spectrum celery-700 (light theme)"
+    },
+    "celery800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2823529411764706,
+          0.5647058823529412,
+          0.0784313725490196
+        ]
+      },
+      "$description": "Spectrum celery-800 (light theme)"
+    },
+    "celery900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.25098039215686274,
+          0.5058823529411764,
+          0.06666666666666667
+        ]
+      },
+      "$description": "Spectrum celery-900 (light theme)"
+    },
+    "celery1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392156862745098,
+          0.42745098039215684,
+          0.047058823529411764
+        ]
+      },
+      "$description": "Spectrum celery-1000 (light theme)"
+    },
+    "celery1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.17254901960784313,
+          0.3607843137254902,
+          0.03529411764705882
+        ]
+      },
+      "$description": "Spectrum celery-1100 (light theme)"
+    },
+    "celery1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.13725490196078433,
+          0.29411764705882354,
+          0.023529411764705882
+        ]
+      },
+      "$description": "Spectrum celery-1200 (light theme)"
+    },
+    "celery1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.10588235294117647,
+          0.23529411764705882,
+          0.011764705882352941
+        ]
+      },
+      "$description": "Spectrum celery-1300 (light theme)"
+    },
+    "celery1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07450980392156863,
+          0.1803921568627451,
+          0
+        ]
+      },
+      "$description": "Spectrum celery-1400 (light theme)"
+    },
+    "celery1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.047058823529411764,
+          0.12941176470588237,
+          0
+        ]
+      },
+      "$description": "Spectrum celery-1500 (light theme)"
+    },
+    "celery1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.01568627450980392,
+          0.058823529411764705,
+          0
+        ]
+      },
+      "$description": "Spectrum celery-1600 (light theme)"
+    },
+    "green100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9294117647058824,
+          0.9882352941176471,
+          0.9450980392156862
+        ]
+      },
+      "$description": "Spectrum green-100 (light theme)"
+    },
+    "green200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8431372549019608,
+          0.9686274509803922,
+          0.8823529411764706
+        ]
+      },
+      "$description": "Spectrum green-200 (light theme)"
+    },
+    "green300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6784313725490196,
+          0.9333333333333333,
+          0.7725490196078432
+        ]
+      },
+      "$description": "Spectrum green-300 (light theme)"
+    },
+    "green400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4196078431372549,
+          0.8901960784313725,
+          0.6352941176470588
+        ]
+      },
+      "$description": "Spectrum green-400 (light theme)"
+    },
+    "green500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16862745098039217,
+          0.8196078431372549,
+          0.49019607843137253
+        ]
+      },
+      "$description": "Spectrum green-500 (light theme)"
+    },
+    "green600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07058823529411765,
+          0.7215686274509804,
+          0.403921568627451
+        ]
+      },
+      "$description": "Spectrum green-600 (light theme)"
+    },
+    "green700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.043137254901960784,
+          0.6431372549019608,
+          0.36470588235294116
+        ]
+      },
+      "$description": "Spectrum green-700 (light theme)"
+    },
+    "green800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.027450980392156862,
+          0.5764705882352941,
+          0.3333333333333333
+        ]
+      },
+      "$description": "Spectrum green-800 (light theme)"
+    },
+    "green900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0196078431372549,
+          0.5137254901960784,
+          0.3058823529411765
+        ]
+      },
+      "$description": "Spectrum green-900 (light theme)"
+    },
+    "green1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.011764705882352941,
+          0.43137254901960786,
+          0.27058823529411763
+        ]
+      },
+      "$description": "Spectrum green-1000 (light theme)"
+    },
+    "green1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.00784313725490196,
+          0.36470588235294116,
+          0.23529411764705882
+        ]
+      },
+      "$description": "Spectrum green-1100 (light theme)"
+    },
+    "green1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.00392156862745098,
+          0.2980392156862745,
+          0.20392156862745098
+        ]
+      },
+      "$description": "Spectrum green-1200 (light theme)"
+    },
+    "green1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.23921568627450981,
+          0.17254901960784313
+        ]
+      },
+      "$description": "Spectrum green-1300 (light theme)"
+    },
+    "green1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.1803921568627451,
+          0.13333333333333333
+        ]
+      },
+      "$description": "Spectrum green-1400 (light theme)"
+    },
+    "green1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.12941176470588237,
+          0.09803921568627451
+        ]
+      },
+      "$description": "Spectrum green-1500 (light theme)"
+    },
+    "green1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.058823529411764705,
+          0.047058823529411764
+        ]
+      },
+      "$description": "Spectrum green-1600 (light theme)"
+    },
+    "seafoam100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9215686274509803,
+          0.984313725490196,
+          0.9647058823529412
+        ]
+      },
+      "$description": "Spectrum seafoam-100 (light theme)"
+    },
+    "seafoam200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8274509803921568,
+          0.9647058823529412,
+          0.9176470588235294
+        ]
+      },
+      "$description": "Spectrum seafoam-200 (light theme)"
+    },
+    "seafoam300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6627450980392157,
+          0.9294117647058824,
+          0.8470588235294118
+        ]
+      },
+      "$description": "Spectrum seafoam-300 (light theme)"
+    },
+    "seafoam400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3607843137254902,
+          0.8823529411764706,
+          0.7607843137254902
+        ]
+      },
+      "$description": "Spectrum seafoam-400 (light theme)"
+    },
+    "seafoam500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.06274509803921569,
+          0.8117647058823529,
+          0.6627450980392157
+        ]
+      },
+      "$description": "Spectrum seafoam-500 (light theme)"
+    },
+    "seafoam600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.050980392156862744,
+          0.7098039215686275,
+          0.5843137254901961
+        ]
+      },
+      "$description": "Spectrum seafoam-600 (light theme)"
+    },
+    "seafoam700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.043137254901960784,
+          0.6352941176470588,
+          0.5254901960784314
+        ]
+      },
+      "$description": "Spectrum seafoam-700 (light theme)"
+    },
+    "seafoam800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.03529411764705882,
+          0.5647058823529412,
+          0.47058823529411764
+        ]
+      },
+      "$description": "Spectrum seafoam-800 (light theme)"
+    },
+    "seafoam900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.027450980392156862,
+          0.5058823529411764,
+          0.42745098039215684
+        ]
+      },
+      "$description": "Spectrum seafoam-900 (light theme)"
+    },
+    "seafoam1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0196078431372549,
+          0.4235294117647059,
+          0.3607843137254902
+        ]
+      },
+      "$description": "Spectrum seafoam-1000 (light theme)"
+    },
+    "seafoam1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.011764705882352941,
+          0.3607843137254902,
+          0.3137254901960784
+        ]
+      },
+      "$description": "Spectrum seafoam-1100 (light theme)"
+    },
+    "seafoam1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.00392156862745098,
+          0.29411764705882354,
+          0.2627450980392157
+        ]
+      },
+      "$description": "Spectrum seafoam-1200 (light theme)"
+    },
+    "seafoam1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.23529411764705882,
+          0.21176470588235294
+        ]
+      },
+      "$description": "Spectrum seafoam-1300 (light theme)"
+    },
+    "seafoam1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.1803921568627451,
+          0.1568627450980392
+        ]
+      },
+      "$description": "Spectrum seafoam-1400 (light theme)"
+    },
+    "seafoam1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.12941176470588237,
+          0.11372549019607843
+        ]
+      },
+      "$description": "Spectrum seafoam-1500 (light theme)"
+    },
+    "seafoam1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.058823529411764705,
+          0.054901960784313725
+        ]
+      },
+      "$description": "Spectrum seafoam-1600 (light theme)"
+    },
+    "cyan100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9333333333333333,
+          0.9803921568627451,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum cyan-100 (light theme)"
+    },
+    "cyan200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8509803921568627,
+          0.9568627450980393,
+          0.9921568627450981
+        ]
+      },
+      "$description": "Spectrum cyan-200 (light theme)"
+    },
+    "cyan300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7176470588235294,
+          0.9058823529411765,
+          0.9882352941176471
+        ]
+      },
+      "$description": "Spectrum cyan-300 (light theme)"
+    },
+    "cyan400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5411764705882353,
+          0.8352941176470589,
+          1
+        ]
+      },
+      "$description": "Spectrum cyan-400 (light theme)"
+    },
+    "cyan500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3607843137254902,
+          0.7529411764705882,
+          1
+        ]
+      },
+      "$description": "Spectrum cyan-500 (light theme)"
+    },
+    "cyan600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.18823529411764706,
+          0.6549019607843137,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum cyan-600 (light theme)"
+    },
+    "cyan700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.11372549019607843,
+          0.5843137254901961,
+          0.9058823529411765
+        ]
+      },
+      "$description": "Spectrum cyan-700 (light theme)"
+    },
+    "cyan800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07058823529411765,
+          0.5254901960784314,
+          0.803921568627451
+        ]
+      },
+      "$description": "Spectrum cyan-800 (light theme)"
+    },
+    "cyan900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.043137254901960784,
+          0.47058823529411764,
+          0.7019607843137254
+        ]
+      },
+      "$description": "Spectrum cyan-900 (light theme)"
+    },
+    "cyan1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.01568627450980392,
+          0.4,
+          0.5686274509803921
+        ]
+      },
+      "$description": "Spectrum cyan-1000 (light theme)"
+    },
+    "cyan1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.3411764705882353,
+          0.4745098039215686
+        ]
+      },
+      "$description": "Spectrum cyan-1100 (light theme)"
+    },
+    "cyan1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.2784313725490196,
+          0.3843137254901961
+        ]
+      },
+      "$description": "Spectrum cyan-1200 (light theme)"
+    },
+    "cyan1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.2235294117647059,
+          0.3058823529411765
+        ]
+      },
+      "$description": "Spectrum cyan-1300 (light theme)"
+    },
+    "cyan1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.16862745098039217,
+          0.23137254901960785
+        ]
+      },
+      "$description": "Spectrum cyan-1400 (light theme)"
+    },
+    "cyan1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.12156862745098039,
+          0.16862745098039217
+        ]
+      },
+      "$description": "Spectrum cyan-1500 (light theme)"
+    },
+    "cyan1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.054901960784313725,
+          0.0784313725490196
+        ]
+      },
+      "$description": "Spectrum cyan-1600 (light theme)"
+    },
+    "indigo100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9686274509803922,
+          0.9725490196078431,
+          1
+        ]
+      },
+      "$description": "Spectrum indigo-100 (light theme)"
+    },
+    "indigo200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9215686274509803,
+          0.9333333333333333,
+          1
+        ]
+      },
+      "$description": "Spectrum indigo-200 (light theme)"
+    },
+    "indigo300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8470588235294118,
+          0.8705882352941177,
+          1
+        ]
+      },
+      "$description": "Spectrum indigo-300 (light theme)"
+    },
+    "indigo400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7529411764705882,
+          0.788235294117647,
+          1
+        ]
+      },
+      "$description": "Spectrum indigo-400 (light theme)"
+    },
+    "indigo500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6549019607843137,
+          0.6980392156862745,
+          1
+        ]
+      },
+      "$description": "Spectrum indigo-500 (light theme)"
+    },
+    "indigo600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5686274509803921,
+          0.592156862745098,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum indigo-600 (light theme)"
+    },
+    "indigo700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5176470588235295,
+          0.5019607843137255,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum indigo-700 (light theme)"
+    },
+    "indigo800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.47843137254901963,
+          0.41568627450980394,
+          0.9921568627450981
+        ]
+      },
+      "$description": "Spectrum indigo-800 (light theme)"
+    },
+    "indigo900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.44313725490196076,
+          0.3333333333333333,
+          0.9803921568627451
+        ]
+      },
+      "$description": "Spectrum indigo-900 (light theme)"
+    },
+    "indigo1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.38823529411764707,
+          0.2196078431372549,
+          0.9333333333333333
+        ]
+      },
+      "$description": "Spectrum indigo-1000 (light theme)"
+    },
+    "indigo1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.32941176470588235,
+          0.1411764705882353,
+          0.8588235294117647
+        ]
+      },
+      "$description": "Spectrum indigo-1100 (light theme)"
+    },
+    "indigo1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.27058823529411763,
+          0.07450980392156863,
+          0.7490196078431373
+        ]
+      },
+      "$description": "Spectrum indigo-1200 (light theme)"
+    },
+    "indigo1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.21568627450980393,
+          0.023529411764705882,
+          0.6274509803921569
+        ]
+      },
+      "$description": "Spectrum indigo-1300 (light theme)"
+    },
+    "indigo1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16470588235294117,
+          0,
+          0.5058823529411764
+        ]
+      },
+      "$description": "Spectrum indigo-1400 (light theme)"
+    },
+    "indigo1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.12156862745098039,
+          0,
+          0.3843137254901961
+        ]
+      },
+      "$description": "Spectrum indigo-1500 (light theme)"
+    },
+    "indigo1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.06666666666666667,
+          0,
+          0.21176470588235294
+        ]
+      },
+      "$description": "Spectrum indigo-1600 (light theme)"
+    },
+    "purple100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.984313725490196,
+          0.9686274509803922,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum purple-100 (light theme)"
+    },
+    "purple200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9568627450980393,
+          0.9215686274509803,
+          0.9882352941176471
+        ]
+      },
+      "$description": "Spectrum purple-200 (light theme)"
+    },
+    "purple300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9215686274509803,
+          0.8549019607843137,
+          0.9764705882352941
+        ]
+      },
+      "$description": "Spectrum purple-300 (light theme)"
+    },
+    "purple400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8666666666666667,
+          0.7568627450980392,
+          0.9647058823529412
+        ]
+      },
+      "$description": "Spectrum purple-400 (light theme)"
+    },
+    "purple500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8156862745098039,
+          0.6549019607843137,
+          0.9529411764705882
+        ]
+      },
+      "$description": "Spectrum purple-500 (light theme)"
+    },
+    "purple600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7490196078431373,
+          0.5411764705882353,
+          0.9333333333333333
+        ]
+      },
+      "$description": "Spectrum purple-600 (light theme)"
+    },
+    "purple700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6980392156862745,
+          0.4470588235294118,
+          0.9215686274509803
+        ]
+      },
+      "$description": "Spectrum purple-700 (light theme)"
+    },
+    "purple800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6509803921568628,
+          0.3607843137254902,
+          0.9058823529411765
+        ]
+      },
+      "$description": "Spectrum purple-800 (light theme)"
+    },
+    "purple900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6039215686274509,
+          0.2784313725490196,
+          0.8862745098039215
+        ]
+      },
+      "$description": "Spectrum purple-900 (light theme)"
+    },
+    "purple1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5254901960784314,
+          0.1568627450980392,
+          0.8509803921568627
+        ]
+      },
+      "$description": "Spectrum purple-1000 (light theme)"
+    },
+    "purple1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.45098039215686275,
+          0.050980392156862744,
+          0.8
+        ]
+      },
+      "$description": "Spectrum purple-1100 (light theme)"
+    },
+    "purple1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.36470588235294116,
+          0,
+          0.6941176470588235
+        ]
+      },
+      "$description": "Spectrum purple-1200 (light theme)"
+    },
+    "purple1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.29411764705882354,
+          0,
+          0.5647058823529412
+        ]
+      },
+      "$description": "Spectrum purple-1300 (light theme)"
+    },
+    "purple1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.23137254901960785,
+          0,
+          0.43529411764705883
+        ]
+      },
+      "$description": "Spectrum purple-1400 (light theme)"
+    },
+    "purple1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.17254901960784313,
+          0,
+          0.32941176470588235
+        ]
+      },
+      "$description": "Spectrum purple-1500 (light theme)"
+    },
+    "purple1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09019607843137255,
+          0,
+          0.17647058823529413
+        ]
+      },
+      "$description": "Spectrum purple-1600 (light theme)"
+    },
+    "fuchsia100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.996078431372549,
+          0.9647058823529412,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-100 (light theme)"
+    },
+    "fuchsia200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9921568627450981,
+          0.9137254901960784,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-200 (light theme)"
+    },
+    "fuchsia300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9803921568627451,
+          0.8274509803921568,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-300 (light theme)"
+    },
+    "fuchsia400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9686274509803922,
+          0.7098039215686275,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-400 (light theme)"
+    },
+    "fuchsia500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9529411764705882,
+          0.5764705882352941,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-500 (light theme)"
+    },
+    "fuchsia600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9254901960784314,
+          0.4117647058823529,
+          1
+        ]
+      },
+      "$description": "Spectrum fuchsia-600 (light theme)"
+    },
+    "fuchsia700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8745098039215686,
+          0.30196078431372547,
+          0.9607843137254902
+        ]
+      },
+      "$description": "Spectrum fuchsia-700 (light theme)"
+    },
+    "fuchsia800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7843137254901961,
+          0.26666666666666666,
+          0.8627450980392157
+        ]
+      },
+      "$description": "Spectrum fuchsia-800 (light theme)"
+    },
+    "fuchsia900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7098039215686275,
+          0.2235294117647059,
+          0.7843137254901961
+        ]
+      },
+      "$description": "Spectrum fuchsia-900 (light theme)"
+    },
+    "fuchsia1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.611764705882353,
+          0.1568627450980392,
+          0.6862745098039216
+        ]
+      },
+      "$description": "Spectrum fuchsia-1000 (light theme)"
+    },
+    "fuchsia1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5294117647058824,
+          0.10588235294117647,
+          0.6039215686274509
+        ]
+      },
+      "$description": "Spectrum fuchsia-1100 (light theme)"
+    },
+    "fuchsia1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.44313725490196076,
+          0.058823529411764705,
+          0.5137254901960784
+        ]
+      },
+      "$description": "Spectrum fuchsia-1200 (light theme)"
+    },
+    "fuchsia1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3607843137254902,
+          0.01568627450980392,
+          0.42745098039215684
+        ]
+      },
+      "$description": "Spectrum fuchsia-1300 (light theme)"
+    },
+    "fuchsia1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2823529411764706,
+          0,
+          0.34509803921568627
+        ]
+      },
+      "$description": "Spectrum fuchsia-1400 (light theme)"
+    },
+    "fuchsia1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.21176470588235294,
+          0,
+          0.25882352941176473
+        ]
+      },
+      "$description": "Spectrum fuchsia-1500 (light theme)"
+    },
+    "fuchsia1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.11372549019607843,
+          0,
+          0.13725490196078433
+        ]
+      },
+      "$description": "Spectrum fuchsia-1600 (light theme)"
+    },
+    "magenta100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9607843137254902,
+          0.9725490196078431
+        ]
+      },
+      "$description": "Spectrum magenta-100 (light theme)"
+    },
+    "magenta200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9098039215686274,
+          0.9411764705882353
+        ]
+      },
+      "$description": "Spectrum magenta-200 (light theme)"
+    },
+    "magenta300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8352941176470589,
+          0.8901960784313725
+        ]
+      },
+      "$description": "Spectrum magenta-300 (light theme)"
+    },
+    "magenta400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7254901960784313,
+          0.8156862745098039
+        ]
+      },
+      "$description": "Spectrum magenta-400 (light theme)"
+    },
+    "magenta500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.596078431372549,
+          0.7333333333333333
+        ]
+      },
+      "$description": "Spectrum magenta-500 (light theme)"
+    },
+    "magenta600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.4392156862745098,
+          0.6235294117647059
+        ]
+      },
+      "$description": "Spectrum magenta-600 (light theme)"
+    },
+    "magenta700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.2823529411764706,
+          0.5215686274509804
+        ]
+      },
+      "$description": "Spectrum magenta-700 (light theme)"
+    },
+    "magenta800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9411764705882353,
+          0.17647058823529413,
+          0.43137254901960786
+        ]
+      },
+      "$description": "Spectrum magenta-800 (light theme)"
+    },
+    "magenta900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8509803921568627,
+          0.13725490196078433,
+          0.3803921568627451
+        ]
+      },
+      "$description": "Spectrum magenta-900 (light theme)"
+    },
+    "magenta1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7294117647058823,
+          0.08627450980392157,
+          0.3137254901960784
+        ]
+      },
+      "$description": "Spectrum magenta-1000 (light theme)"
+    },
+    "magenta1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6392156862745098,
+          0.0196078431372549,
+          0.24313725490196078
+        ]
+      },
+      "$description": "Spectrum magenta-1100 (light theme)"
+    },
+    "magenta1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5333333333333333,
+          0,
+          0.2
+        ]
+      },
+      "$description": "Spectrum magenta-1200 (light theme)"
+    },
+    "magenta1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.43529411764705883,
+          0,
+          0.1568627450980392
+        ]
+      },
+      "$description": "Spectrum magenta-1300 (light theme)"
+    },
+    "magenta1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.33725490196078434,
+          0,
+          0.11764705882352941
+        ]
+      },
+      "$description": "Spectrum magenta-1400 (light theme)"
+    },
+    "magenta1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.25098039215686274,
+          0,
+          0.08627450980392157
+        ]
+      },
+      "$description": "Spectrum magenta-1500 (light theme)"
+    },
+    "magenta1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.13725490196078433,
+          0,
+          0.047058823529411764
+        ]
+      },
+      "$description": "Spectrum magenta-1600 (light theme)"
+    },
+    "pink100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9647058823529412,
+          0.9882352941176471
+        ]
+      },
+      "$description": "Spectrum pink-100 (light theme)"
+    },
+    "pink200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9098039215686274,
+          0.9686274509803922
+        ]
+      },
+      "$description": "Spectrum pink-200 (light theme)"
+    },
+    "pink300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8274509803921568,
+          0.9411764705882353
+        ]
+      },
+      "$description": "Spectrum pink-300 (light theme)"
+    },
+    "pink400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7098039215686275,
+          0.9019607843137255
+        ]
+      },
+      "$description": "Spectrum pink-400 (light theme)"
+    },
+    "pink500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.5803921568627451,
+          0.8588235294117647
+        ]
+      },
+      "$description": "Spectrum pink-500 (light theme)"
+    },
+    "pink600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.403921568627451,
+          0.8
+        ]
+      },
+      "$description": "Spectrum pink-600 (light theme)"
+    },
+    "pink700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9490196078431372,
+          0.2980392156862745,
+          0.7215686274509804
+        ]
+      },
+      "$description": "Spectrum pink-700 (light theme)"
+    },
+    "pink800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8941176470588236,
+          0.20392156862745098,
+          0.6392156862745098
+        ]
+      },
+      "$description": "Spectrum pink-800 (light theme)"
+    },
+    "pink900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.807843137254902,
+          0.16470588235294117,
+          0.5725490196078431
+        ]
+      },
+      "$description": "Spectrum pink-900 (light theme)"
+    },
+    "pink1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6901960784313725,
+          0.12156862745098039,
+          0.4823529411764706
+        ]
+      },
+      "$description": "Spectrum pink-1000 (light theme)"
+    },
+    "pink1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.596078431372549,
+          0.08627450980392157,
+          0.40784313725490196
+        ]
+      },
+      "$description": "Spectrum pink-1100 (light theme)"
+    },
+    "pink1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5019607843137255,
+          0.047058823529411764,
+          0.3333333333333333
+        ]
+      },
+      "$description": "Spectrum pink-1200 (light theme)"
+    },
+    "pink1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4117647058823529,
+          0.011764705882352941,
+          0.26666666666666666
+        ]
+      },
+      "$description": "Spectrum pink-1300 (light theme)"
+    },
+    "pink1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3254901960784314,
+          0,
+          0.20784313725490197
+        ]
+      },
+      "$description": "Spectrum pink-1400 (light theme)"
+    },
+    "pink1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.24313725490196078,
+          0,
+          0.15294117647058825
+        ]
+      },
+      "$description": "Spectrum pink-1500 (light theme)"
+    },
+    "pink1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.12941176470588237,
+          0,
+          0.08235294117647059
+        ]
+      },
+      "$description": "Spectrum pink-1600 (light theme)"
+    },
+    "turquoise100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9333333333333333,
+          0.984313725490196,
+          0.984313725490196
+        ]
+      },
+      "$description": "Spectrum turquoise-100 (light theme)"
+    },
+    "turquoise200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8196078431372549,
+          0.9607843137254902,
+          0.9607843137254902
+        ]
+      },
+      "$description": "Spectrum turquoise-200 (light theme)"
+    },
+    "turquoise300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6627450980392157,
+          0.9254901960784314,
+          0.9294117647058824
+        ]
+      },
+      "$description": "Spectrum turquoise-300 (light theme)"
+    },
+    "turquoise400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.43529411764705883,
+          0.8666666666666667,
+          0.8941176470588236
+        ]
+      },
+      "$description": "Spectrum turquoise-400 (light theme)"
+    },
+    "turquoise500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.15294117647058825,
+          0.792156862745098,
+          0.8470588235294118
+        ]
+      },
+      "$description": "Spectrum turquoise-500 (light theme)"
+    },
+    "turquoise600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.058823529411764705,
+          0.6941176470588235,
+          0.7529411764705882
+        ]
+      },
+      "$description": "Spectrum turquoise-600 (light theme)"
+    },
+    "turquoise700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.047058823529411764,
+          0.6196078431372549,
+          0.6705882352941176
+        ]
+      },
+      "$description": "Spectrum turquoise-700 (light theme)"
+    },
+    "turquoise800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0392156862745098,
+          0.5529411764705883,
+          0.6
+        ]
+      },
+      "$description": "Spectrum turquoise-800 (light theme)"
+    },
+    "turquoise900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.03137254901960784,
+          0.49411764705882355,
+          0.5372549019607843
+        ]
+      },
+      "$description": "Spectrum turquoise-900 (light theme)"
+    },
+    "turquoise1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0196078431372549,
+          0.4196078431372549,
+          0.4549019607843137
+        ]
+      },
+      "$description": "Spectrum turquoise-1000 (light theme)"
+    },
+    "turquoise1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.011764705882352941,
+          0.35294117647058826,
+          0.3843137254901961
+        ]
+      },
+      "$description": "Spectrum turquoise-1100 (light theme)"
+    },
+    "turquoise1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.00392156862745098,
+          0.2901960784313726,
+          0.3176470588235294
+        ]
+      },
+      "$description": "Spectrum turquoise-1200 (light theme)"
+    },
+    "turquoise1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.23137254901960785,
+          0.2549019607843137
+        ]
+      },
+      "$description": "Spectrum turquoise-1300 (light theme)"
+    },
+    "turquoise1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.17254901960784313,
+          0.19215686274509805
+        ]
+      },
+      "$description": "Spectrum turquoise-1400 (light theme)"
+    },
+    "turquoise1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.12549019607843137,
+          0.13725490196078433
+        ]
+      },
+      "$description": "Spectrum turquoise-1500 (light theme)"
+    },
+    "turquoise1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.058823529411764705,
+          0.06666666666666667
+        ]
+      },
+      "$description": "Spectrum turquoise-1600 (light theme)"
+    },
+    "brown100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9882352941176471,
+          0.9686274509803922,
+          0.9490196078431372
+        ]
+      },
+      "$description": "Spectrum brown-100 (light theme)"
+    },
+    "brown200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9686274509803922,
+          0.9333333333333333,
+          0.8823529411764706
+        ]
+      },
+      "$description": "Spectrum brown-200 (light theme)"
+    },
+    "brown300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9372549019607843,
+          0.8666666666666667,
+          0.7647058823529411
+        ]
+      },
+      "$description": "Spectrum brown-300 (light theme)"
+    },
+    "brown400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392156862745,
+          0.7843137254901961,
+          0.615686274509804
+        ]
+      },
+      "$description": "Spectrum brown-400 (light theme)"
+    },
+    "brown500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8392156862745098,
+          0.6941176470588235,
+          0.4823529411764706
+        ]
+      },
+      "$description": "Spectrum brown-500 (light theme)"
+    },
+    "brown600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7450980392156863,
+          0.6078431372549019,
+          0.40784313725490196
+        ]
+      },
+      "$description": "Spectrum brown-600 (light theme)"
+    },
+    "brown700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6705882352941176,
+          0.5411764705882353,
+          0.35294117647058826
+        ]
+      },
+      "$description": "Spectrum brown-700 (light theme)"
+    },
+    "brown800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6039215686274509,
+          0.4823529411764706,
+          0.30196078431372547
+        ]
+      },
+      "$description": "Spectrum brown-800 (light theme)"
+    },
+    "brown900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5450980392156862,
+          0.42745098039215684,
+          0.25882352941176473
+        ]
+      },
+      "$description": "Spectrum brown-900 (light theme)"
+    },
+    "brown1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4666666666666667,
+          0.3568627450980392,
+          0.19607843137254902
+        ]
+      },
+      "$description": "Spectrum brown-1000 (light theme)"
+    },
+    "brown1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.403921568627451,
+          0.2980392156862745,
+          0.13725490196078433
+        ]
+      },
+      "$description": "Spectrum brown-1100 (light theme)"
+    },
+    "brown1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.34509803921568627,
+          0.23921568627450981,
+          0.08235294117647059
+        ]
+      },
+      "$description": "Spectrum brown-1200 (light theme)"
+    },
+    "brown1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.27450980392156865,
+          0.19215686274509805,
+          0.06666666666666667
+        ]
+      },
+      "$description": "Spectrum brown-1300 (light theme)"
+    },
+    "brown1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392156862745098,
+          0.1450980392156863,
+          0.050980392156862744
+        ]
+      },
+      "$description": "Spectrum brown-1400 (light theme)"
+    },
+    "brown1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.14901960784313725,
+          0.10196078431372549,
+          0.03529411764705882
+        ]
+      },
+      "$description": "Spectrum brown-1500 (light theme)"
+    },
+    "brown1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.06274509803921569,
+          0.047058823529411764,
+          0.01568627450980392
+        ]
+      },
+      "$description": "Spectrum brown-1600 (light theme)"
+    },
+    "silver100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9686274509803922,
+          0.9686274509803922,
+          0.9686274509803922
+        ]
+      },
+      "$description": "Spectrum silver-100 (light theme)"
+    },
+    "silver200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9372549019607843,
+          0.9372549019607843,
+          0.9372549019607843
+        ]
+      },
+      "$description": "Spectrum silver-200 (light theme)"
+    },
+    "silver300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8745098039215686,
+          0.8745098039215686,
+          0.8745098039215686
+        ]
+      },
+      "$description": "Spectrum silver-300 (light theme)"
+    },
+    "silver400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8,
+          0.8,
+          0.8
+        ]
+      },
+      "$description": "Spectrum silver-400 (light theme)"
+    },
+    "silver500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7176470588235294,
+          0.7176470588235294,
+          0.7176470588235294
+        ]
+      },
+      "$description": "Spectrum silver-500 (light theme)"
+    },
+    "silver600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ]
+      },
+      "$description": "Spectrum silver-600 (light theme)"
+    },
+    "silver700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5607843137254902,
+          0.5607843137254902,
+          0.5607843137254902
+        ]
+      },
+      "$description": "Spectrum silver-700 (light theme)"
+    },
+    "silver800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255
+        ]
+      },
+      "$description": "Spectrum silver-800 (light theme)"
+    },
+    "silver900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4470588235294118,
+          0.4470588235294118,
+          0.4470588235294118
+        ]
+      },
+      "$description": "Spectrum silver-900 (light theme)"
+    },
+    "silver1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941
+        ]
+      },
+      "$description": "Spectrum silver-1000 (light theme)"
+    },
+    "silver1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3176470588235294,
+          0.3176470588235294,
+          0.3176470588235294
+        ]
+      },
+      "$description": "Spectrum silver-1100 (light theme)"
+    },
+    "silver1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.25882352941176473,
+          0.25882352941176473,
+          0.25882352941176473
+        ]
+      },
+      "$description": "Spectrum silver-1200 (light theme)"
+    },
+    "silver1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392156862745098,
+          0.20392156862745098,
+          0.20392156862745098
+        ]
+      },
+      "$description": "Spectrum silver-1300 (light theme)"
+    },
+    "silver1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.15294117647058825,
+          0.15294117647058825,
+          0.15294117647058825
+        ]
+      },
+      "$description": "Spectrum silver-1400 (light theme)"
+    },
+    "silver1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.10980392156862745,
+          0.10980392156862745,
+          0.10980392156862745
+        ]
+      },
+      "$description": "Spectrum silver-1500 (light theme)"
+    },
+    "silver1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.047058823529411764,
+          0.047058823529411764,
+          0.047058823529411764
+        ]
+      },
+      "$description": "Spectrum silver-1600 (light theme)"
+    },
+    "cinnamon100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9921568627450981,
+          0.9686274509803922,
+          0.9529411764705882
+        ]
+      },
+      "$description": "Spectrum cinnamon-100 (light theme)"
+    },
+    "cinnamon200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9764705882352941,
+          0.9254901960784314,
+          0.8980392156862745
+        ]
+      },
+      "$description": "Spectrum cinnamon-200 (light theme)"
+    },
+    "cinnamon300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9568627450980393,
+          0.8549019607843137,
+          0.796078431372549
+        ]
+      },
+      "$description": "Spectrum cinnamon-300 (light theme)"
+    },
+    "cinnamon400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9294117647058824,
+          0.7686274509803922,
+          0.6745098039215687
+        ]
+      },
+      "$description": "Spectrum cinnamon-400 (light theme)"
+    },
+    "cinnamon500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8980392156862745,
+          0.6666666666666666,
+          0.5333333333333333
+        ]
+      },
+      "$description": "Spectrum cinnamon-500 (light theme)"
+    },
+    "cinnamon600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8313725490196079,
+          0.5686274509803921,
+          0.4235294117647059
+        ]
+      },
+      "$description": "Spectrum cinnamon-600 (light theme)"
+    },
+    "cinnamon700": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7764705882352941,
+          0.49411764705882355,
+          0.34509803921568627
+        ]
+      },
+      "$description": "Spectrum cinnamon-700 (light theme)"
+    },
+    "cinnamon800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7215686274509804,
+          0.42745098039215684,
+          0.27450980392156865
+        ]
+      },
+      "$description": "Spectrum cinnamon-800 (light theme)"
+    },
+    "cinnamon900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6666666666666666,
+          0.3686274509803922,
+          0.2196078431372549
+        ]
+      },
+      "$description": "Spectrum cinnamon-900 (light theme)"
+    },
+    "cinnamon1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5764705882352941,
+          0.30196078431372547,
+          0.16862745098039217
+        ]
+      },
+      "$description": "Spectrum cinnamon-1000 (light theme)"
+    },
+    "cinnamon1100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5019607843137255,
+          0.24313725490196078,
+          0.12549019607843137
+        ]
+      },
+      "$description": "Spectrum cinnamon-1100 (light theme)"
+    },
+    "cinnamon1200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.43137254901960786,
+          0.18823529411764706,
+          0.08235294117647059
+        ]
+      },
+      "$description": "Spectrum cinnamon-1200 (light theme)"
+    },
+    "cinnamon1300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.3607843137254902,
+          0.13725490196078433,
+          0.043137254901960784
+        ]
+      },
+      "$description": "Spectrum cinnamon-1300 (light theme)"
+    },
+    "cinnamon1400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.2823529411764706,
+          0.09803921568627451,
+          0.023529411764705882
+        ]
+      },
+      "$description": "Spectrum cinnamon-1400 (light theme)"
+    },
+    "cinnamon1500": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.20392156862745098,
+          0.07058823529411765,
+          0.01568627450980392
+        ]
+      },
+      "$description": "Spectrum cinnamon-1500 (light theme)"
+    },
+    "cinnamon1600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09411764705882353,
+          0.03137254901960784,
+          0.00784313725490196
+        ]
+      },
+      "$description": "Spectrum cinnamon-1600 (light theme)"
+    },
+    "staticBlue900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.23137254901960785,
+          0.38823529411764707,
+          0.984313725490196
+        ]
+      },
+      "$description": "Spectrum static-blue-900"
+    },
+    "staticBlue1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.15294117647058825,
+          0.30196078431372547,
+          0.9176470588235294
+        ]
+      },
+      "$description": "Spectrum static-blue-1000"
+    },
+    "staticFuchsia400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9686274509803922,
+          0.7098039215686275,
+          1
+        ]
+      },
+      "$description": "Spectrum static-fuchsia-400"
+    },
+    "staticFuchsia600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9254901960784314,
+          0.4117647058823529,
+          1
+        ]
+      },
+      "$description": "Spectrum static-fuchsia-600"
+    },
+    "staticFuchsia800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7843137254901961,
+          0.26666666666666666,
+          0.8627450980392157
+        ]
+      },
+      "$description": "Spectrum static-fuchsia-800"
+    },
+    "staticFuchsia900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7098039215686275,
+          0.2235294117647059,
+          0.7843137254901961
+        ]
+      },
+      "$description": "Spectrum static-fuchsia-900"
+    },
+    "staticFuchsia1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.611764705882353,
+          0.1568627450980392,
+          0.6862745098039216
+        ]
+      },
+      "$description": "Spectrum static-fuchsia-1000"
+    },
+    "staticIndigo400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7529411764705882,
+          0.788235294117647,
+          1
+        ]
+      },
+      "$description": "Spectrum static-indigo-400"
+    },
+    "staticIndigo600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5686274509803921,
+          0.592156862745098,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum static-indigo-600"
+    },
+    "staticIndigo800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.47843137254901963,
+          0.41568627450980394,
+          0.9921568627450981
+        ]
+      },
+      "$description": "Spectrum static-indigo-800"
+    },
+    "staticIndigo900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.44313725490196076,
+          0.3333333333333333,
+          0.9803921568627451
+        ]
+      },
+      "$description": "Spectrum static-indigo-900"
+    },
+    "staticIndigo1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.38823529411764707,
+          0.2196078431372549,
+          0.9333333333333333
+        ]
+      },
+      "$description": "Spectrum static-indigo-1000"
+    },
+    "staticMagenta400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7254901960784313,
+          0.8156862745098039
+        ]
+      },
+      "$description": "Spectrum static-magenta-400"
+    },
+    "staticMagenta600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.4392156862745098,
+          0.6235294117647059
+        ]
+      },
+      "$description": "Spectrum static-magenta-600"
+    },
+    "staticMagenta800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9411764705882353,
+          0.17647058823529413,
+          0.43137254901960786
+        ]
+      },
+      "$description": "Spectrum static-magenta-800"
+    },
+    "staticMagenta900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8509803921568627,
+          0.13725490196078433,
+          0.3803921568627451
+        ]
+      },
+      "$description": "Spectrum static-magenta-900"
+    },
+    "staticMagenta1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7294117647058823,
+          0.08627450980392157,
+          0.3137254901960784
+        ]
+      },
+      "$description": "Spectrum static-magenta-1000"
+    },
+    "staticRed400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7372549019607844,
+          0.7058823529411765
+        ]
+      },
+      "$description": "Spectrum static-red-400"
+    },
+    "staticRed600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.4627450980392157,
+          0.396078431372549
+        ]
+      },
+      "$description": "Spectrum static-red-600"
+    },
+    "staticRed800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9411764705882353,
+          0.2196078431372549,
+          0.13725490196078433
+        ]
+      },
+      "$description": "Spectrum static-red-800"
+    },
+    "staticRed900": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8431372549019608,
+          0.19607843137254902,
+          0.12549019607843137
+        ]
+      },
+      "$description": "Spectrum static-red-900"
+    },
+    "staticRed1000": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7176470588235294,
+          0.1568627450980392,
+          0.09411764705882353
+        ]
+      },
+      "$description": "Spectrum static-red-1000"
+    },
+    "staticCyan400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5411764705882353,
+          0.8352941176470589,
+          1
+        ]
+      },
+      "$description": "Spectrum static-cyan-400"
+    },
+    "staticCyan600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.18823529411764706,
+          0.6549019607843137,
+          0.996078431372549
+        ]
+      },
+      "$description": "Spectrum static-cyan-600"
+    },
+    "staticCyan800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07058823529411765,
+          0.5254901960784314,
+          0.803921568627451
+        ]
+      },
+      "$description": "Spectrum static-cyan-800"
+    },
+    "staticChartreuse400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7137254901960784,
+          0.8588235294117647,
+          0
+        ]
+      },
+      "$description": "Spectrum static-chartreuse-400"
+    },
+    "staticChartreuse600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.5607843137254902,
+          0.6745098039215687,
+          0
+        ]
+      },
+      "$description": "Spectrum static-chartreuse-600"
+    },
+    "staticChartreuse800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4470588235294118,
+          0.5372549019607843,
+          0
+        ]
+      },
+      "$description": "Spectrum static-chartreuse-800"
+    },
+    "staticGreen400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4196078431372549,
+          0.8901960784313725,
+          0.6352941176470588
+        ]
+      },
+      "$description": "Spectrum static-green-400"
+    },
+    "staticGreen600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.07058823529411765,
+          0.7215686274509804,
+          0.403921568627451
+        ]
+      },
+      "$description": "Spectrum static-green-600"
+    },
+    "staticGreen800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.027450980392156862,
+          0.5764705882352941,
+          0.3333333333333333
+        ]
+      },
+      "$description": "Spectrum static-green-800"
+    },
+    "staticOrange400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.7568627450980392,
+          0.3686274509803922
+        ]
+      },
+      "$description": "Spectrum static-orange-400"
+    },
+    "staticOrange600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9882352941176471,
+          0.49019607843137253,
+          0
+        ]
+      },
+      "$description": "Spectrum static-orange-600"
+    },
+    "staticOrange800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8313725490196079,
+          0.3568627450980392,
+          0
+        ]
+      },
+      "$description": "Spectrum static-orange-800"
+    },
+    "staticPurple400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8666666666666667,
+          0.7568627450980392,
+          0.9647058823529412
+        ]
+      },
+      "$description": "Spectrum static-purple-400"
+    },
+    "staticPurple600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.7490196078431373,
+          0.5411764705882353,
+          0.9333333333333333
+        ]
+      },
+      "$description": "Spectrum static-purple-600"
+    },
+    "staticPurple800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6509803921568628,
+          0.3607843137254902,
+          0.9058823529411765
+        ]
+      },
+      "$description": "Spectrum static-purple-800"
+    },
+    "staticTurquoise400": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.43529411764705883,
+          0.8666666666666667,
+          0.8941176470588236
+        ]
+      },
+      "$description": "Spectrum static-turquoise-400"
+    },
+    "staticTurquoise600": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.058823529411764705,
+          0.6941176470588235,
+          0.7529411764705882
+        ]
+      },
+      "$description": "Spectrum static-turquoise-600"
+    },
+    "staticTurquoise800": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0392156862745098,
+          0.5529411764705883,
+          0.6
+        ]
+      },
+      "$description": "Spectrum static-turquoise-800"
+    }
+  },
+  "colorAliases": {
+    "$type": "color",
+    "$description": "Color aliases for specific design purposes",
+    "dropShadowColor100": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.12
+      },
+      "$description": "Spectrum drop-shadow-color-100 (light theme)"
+    },
+    "dropShadowColor200": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0.16
+      },
+      "$description": "Spectrum drop-shadow-color-200 (light theme)"
+    },
+    "dropShadowColor300": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.2
       },
-      "$description": "Spectrum drop-shadow-dragged-color"
+      "$description": "Spectrum drop-shadow-color-300 (light theme)"
     },
     "dropShadowAmbientColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.08
       },
-      "$description": "Spectrum drop-shadow-ambient-color"
+      "$description": "Spectrum drop-shadow-ambient-color (light theme)"
     },
     "dropShadowTransitionColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.04
       },
-      "$description": "Spectrum drop-shadow-transition-color"
+      "$description": "Spectrum drop-shadow-transition-color (light theme)"
     },
     "dropShadowEmphasizedKeyColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.08
       },
-      "$description": "Spectrum drop-shadow-emphasized-key-color"
+      "$description": "Spectrum drop-shadow-emphasized-key-color (light theme)"
     },
     "dropShadowEmphasizedHoverKeyColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.12
       },
-      "$description": "Spectrum drop-shadow-emphasized-hover-key-color"
+      "$description": "Spectrum drop-shadow-emphasized-hover-key-color (light theme)"
     },
     "dropShadowElevatedKeyColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.12
       },
-      "$description": "Spectrum drop-shadow-elevated-key-color"
+      "$description": "Spectrum drop-shadow-elevated-key-color (light theme)"
     },
     "dropShadowDraggedKeyColor": {
       "$value": {
         "colorSpace": "srgb",
-        "components": [0, 0, 0],
+        "components": [
+          0,
+          0,
+          0
+        ],
         "alpha": 0.16
       },
-      "$description": "Spectrum drop-shadow-dragged-key-color"
-    },
-    "swatchBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum swatch-border-color"
-    },
-    "swatchDisabledIconBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum swatch-disabled-icon-border-color"
-    },
-    "thumbnailBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum thumbnail-border-color"
-    },
-    "colorAreaBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum color-area-border-color"
-    },
-    "colorSliderBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum color-slider-border-color"
-    },
-    "colorLoupeDropShadowColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.16
-      },
-      "$description": "Spectrum color-loupe-drop-shadow-color"
-    },
-    "colorLoupeInnerBorder": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.12
-      },
-      "$description": "Spectrum color-loupe-inner-border"
-    },
-    "colorLoupeOuterBorder": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1]
-      },
-      "$description": "Spectrum color-loupe-outer-border"
-    },
-    "cardSelectionBackgroundColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
-        "alpha": 0.51
-      },
-      "$description": "Spectrum card-selection-background-color"
-    },
-    "coachMarkPaginationColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.44313725490196076, 0.44313725490196076, 0.44313725490196076
-        ]
-      },
-      "$description": "Spectrum coach-mark-pagination-color"
-    },
-    "colorHandleInnerBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum color-handle-inner-border-color"
-    },
-    "colorHandleOuterBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum color-handle-outer-border-color"
-    },
-    "colorHandleDropShadowColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.12
-      },
-      "$description": "Spectrum color-handle-drop-shadow-color"
-    },
-    "floatingActionButtonDropShadowColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.15
-      },
-      "$description": "Spectrum floating-action-button-drop-shadow-color"
-    },
-    "floatingActionButtonShadowColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0],
-        "alpha": 0.15
-      },
-      "$description": "Spectrum floating-action-button-shadow-color"
-    },
-    "tableRowHoverColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum table-row-hover-color"
-    },
-    "tableSelectedRowBackgroundColorNonEmphasized": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum table-selected-row-background-color-non-emphasized"
-    },
-    "popoverBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
-        "alpha": 0
-      },
-      "$description": "Spectrum popover-border-color"
-    },
-    "coachIndicatorColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.29411764705882354, 0.4588235294117647, 1]
-      },
-      "$description": "Spectrum coach-indicator-color"
-    },
-    "swatchGroupBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum swatch-group-border-color"
-    },
-    "avatarBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1]
-      },
-      "$description": "Spectrum avatar-border-color"
-    },
-    "standardPanelGripperColorDrag": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum standard-panel-gripper-color-drag"
-    },
-    "standardPanelGripperColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.5607843137254902, 0.5607843137254902, 0.5607843137254902
-        ]
-      },
-      "$description": "Spectrum standard-panel-gripper-color"
-    },
-    "barPanelGripperColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8823529411764706, 0.8823529411764706, 0.8823529411764706
-        ]
-      },
-      "$description": "Spectrum bar-panel-gripper-color"
-    },
-    "barPanelGripperColorDrag": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum bar-panel-gripper-color-drag"
-    },
-    "selectBoxSelectedBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum select-box-selected-border-color"
-    },
-    "treeViewRowBackgroundHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum tree-view-row-background-hover"
-    },
-    "treeViewSelectedRowBackgroundDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum tree-view-selected-row-background-default"
-    },
-    "treeViewSelectedRowBackgroundHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum tree-view-selected-row-background-hover"
-    },
-    "colorWheelBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0, 0]
-      },
-      "$description": "Spectrum color-wheel-border-color"
-    },
-    "actionBarBorderColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 1, 1],
-        "alpha": 0
-      },
-      "$description": "Spectrum action-bar-border-color"
-    },
-    "cardBackgroundWellColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum card-background-well-color"
-    },
-    "cardBackgroundLoadingColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum card-background-loading-color"
-    },
-    "stackItemBackgroundColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum stack-item-background-color-hover"
-    },
-    "stackItemBackgroundColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum stack-item-background-color-down"
-    },
-    "stackItemBackgroundColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum stack-item-background-color-key-focus"
-    },
-    "stackItemSelectedBackgroundColorDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9137254901960784, 0.9137254901960784, 0.9137254901960784
-        ]
-      },
-      "$description": "Spectrum stack-item-selected-background-color-default"
-    },
-    "stackItemSelectedBackgroundColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8823529411764706, 0.8823529411764706, 0.8823529411764706
-        ]
-      },
-      "$description": "Spectrum stack-item-selected-background-color-hover"
-    },
-    "stackItemSelectedBackgroundColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8823529411764706, 0.8823529411764706, 0.8823529411764706
-        ]
-      },
-      "$description": "Spectrum stack-item-selected-background-color-down"
-    },
-    "stackItemSelectedBackgroundColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8823529411764706, 0.8823529411764706, 0.8823529411764706
-        ]
-      },
-      "$description": "Spectrum stack-item-selected-background-color-key-focus"
-    },
-    "iconColorInverse": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9725490196078431, 0.9725490196078431, 0.9725490196078431
-        ]
-      },
-      "$description": "Spectrum icon-color-inverse"
-    },
-    "iconColorPrimaryDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum icon-color-primary-default"
-    },
-    "iconColorGreenPrimaryDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.027450980392156862, 0.5764705882352941, 0.3333333333333333
-        ]
-      },
-      "$description": "Spectrum icon-color-green-primary-default"
-    },
-    "iconColorPrimaryHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum icon-color-primary-hover"
-    },
-    "iconColorPrimaryDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum icon-color-primary-down"
-    },
-    "iconColorCinnamonPrimaryDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7215686274509804, 0.42745098039215684, 0.27450980392156865
-        ]
-      },
-      "$description": "Spectrum icon-color-cinnamon-primary-default"
-    },
-    "iconColorCinnamonPrimaryHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.6666666666666666, 0.3686274509803922, 0.2196078431372549
-        ]
-      },
-      "$description": "Spectrum icon-color-cinnamon-primary-hover"
-    },
-    "iconColorCinnamonPrimaryDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.5764705882352941, 0.30196078431372547, 0.16862745098039217
-        ]
-      },
-      "$description": "Spectrum icon-color-cinnamon-primary-down"
-    },
-    "iconColorCyanPrimaryDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07058823529411765, 0.5254901960784314, 0.803921568627451
-        ]
-      },
-      "$description": "Spectrum icon-color-cyan-primary-default"
-    },
-    "iconColorCyanPrimaryHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.043137254901960784, 0.47058823529411764, 0.7019607843137254
-        ]
-      },
-      "$description": "Spectrum icon-color-cyan-primary-hover"
-    },
-    "iconColorCyanPrimaryDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.01568627450980392, 0.4, 0.5686274509803921]
-      },
-      "$description": "Spectrum icon-color-cyan-primary-down"
-    },
-    "iconColorGreenPrimaryHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.0196078431372549, 0.5137254901960784, 0.3058823529411765
-        ]
-      },
-      "$description": "Spectrum icon-color-green-primary-hover"
-    },
-    "iconColorGreenPrimaryDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.011764705882352941, 0.43137254901960786, 0.27058823529411763
-        ]
-      },
-      "$description": "Spectrum icon-color-green-primary-down"
-    },
-    "iconColorSeafoamPrimaryDefault": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.03529411764705882, 0.5647058823529412, 0.47058823529411764
-        ]
-      },
-      "$description": "Spectrum icon-color-seafoam-primary-default"
-    },
-    "iconColorSeafoamPrimaryHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.027450980392156862, 0.5058823529411764, 0.42745098039215684
-        ]
-      },
-      "$description": "Spectrum icon-color-seafoam-primary-hover"
-    },
-    "iconColorSeafoamPrimaryDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.0196078431372549, 0.4235294117647059, 0.3607843137254902
-        ]
-      },
-      "$description": "Spectrum icon-color-seafoam-primary-down"
-    },
-    "iconColorDisabledPrimary": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7764705882352941, 0.7764705882352941, 0.7764705882352941
-        ]
-      },
-      "$description": "Spectrum icon-color-disabled-primary"
-    },
-    "iconColorFuchsiaBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.9921568627450981, 0.9137254901960784, 1]
-      },
-      "$description": "Spectrum icon-color-fuchsia-background"
-    },
-    "iconColorMagentaBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9098039215686274, 0.9411764705882353]
-      },
-      "$description": "Spectrum icon-color-magenta-background"
-    },
-    "iconColorPinkBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9098039215686274, 0.9686274509803922]
-      },
-      "$description": "Spectrum icon-color-pink-background"
-    },
-    "iconColorPurpleBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9568627450980393, 0.9215686274509803, 0.9882352941176471
-        ]
-      },
-      "$description": "Spectrum icon-color-purple-background"
-    },
-    "iconColorInverseBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9725490196078431, 0.9725490196078431, 0.9725490196078431
-        ]
-      },
-      "$description": "Spectrum icon-color-inverse-background"
-    },
-    "iconColorEmphasizedBackground": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum icon-color-emphasized-background"
-    },
-    "accentColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.9607843137254902, 0.9764705882352941, 1]
-      },
-      "$description": "Spectrum accent-color-100"
-    },
-    "accentColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8980392156862745, 0.9411764705882353, 0.996078431372549
-        ]
-      },
-      "$description": "Spectrum accent-color-200"
-    },
-    "accentColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.796078431372549, 0.8862745098039215, 0.996078431372549]
-      },
-      "$description": "Spectrum accent-color-300"
-    },
-    "accentColor-400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.6745098039215687, 0.8117647058823529, 0.9921568627450981
-        ]
-      },
-      "$description": "Spectrum accent-color-400"
-    },
-    "accentColor-500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.5568627450980392, 0.7254901960784313, 0.9882352941176471
-        ]
-      },
-      "$description": "Spectrum accent-color-500"
-    },
-    "accentColor-600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.4470588235294118, 0.6196078431372549, 0.9921568627450981
-        ]
-      },
-      "$description": "Spectrum accent-color-600"
-    },
-    "accentColor-700": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.36470588235294116, 0.5372549019607843, 1]
-      },
-      "$description": "Spectrum accent-color-700"
-    },
-    "accentColor-800": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.29411764705882354, 0.4588235294117647, 1]
-      },
-      "$description": "Spectrum accent-color-800"
-    },
-    "accentColor-900": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.23137254901960785, 0.38823529411764707, 0.984313725490196
-        ]
-      },
-      "$description": "Spectrum accent-color-900"
-    },
-    "accentColor-1000": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum accent-color-1000"
-    },
-    "accentColor-1100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.11372549019607843, 0.24313725490196078, 0.8117647058823529
-        ]
-      },
-      "$description": "Spectrum accent-color-1100"
-    },
-    "accentColor-1200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.08235294117647059, 0.19607843137254902, 0.6784313725490196
-        ]
-      },
-      "$description": "Spectrum accent-color-1200"
-    },
-    "accentColor-1300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.06274509803921569, 0.1568627450980392, 0.5490196078431373
-        ]
-      },
-      "$description": "Spectrum accent-color-1300"
-    },
-    "accentColor-1400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.047058823529411764, 0.12156862745098039, 0.4117647058823529
-        ]
-      },
-      "$description": "Spectrum accent-color-1400"
-    },
-    "accentColor-1500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.054901960784313725, 0.09411764705882353, 0.2627450980392157
-        ]
-      },
-      "$description": "Spectrum accent-color-1500"
-    },
-    "accentColor-1600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.027450980392156862, 0.043137254901960784, 0.11764705882352941
-        ]
-      },
-      "$description": "Spectrum accent-color-1600"
-    },
-    "informativeColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.9607843137254902, 0.9764705882352941, 1]
-      },
-      "$description": "Spectrum informative-color-100"
-    },
-    "informativeColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8980392156862745, 0.9411764705882353, 0.996078431372549
-        ]
-      },
-      "$description": "Spectrum informative-color-200"
-    },
-    "informativeColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.796078431372549, 0.8862745098039215, 0.996078431372549]
-      },
-      "$description": "Spectrum informative-color-300"
-    },
-    "informativeColor-400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.6745098039215687, 0.8117647058823529, 0.9921568627450981
-        ]
-      },
-      "$description": "Spectrum informative-color-400"
-    },
-    "informativeColor-500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.5568627450980392, 0.7254901960784313, 0.9882352941176471
-        ]
-      },
-      "$description": "Spectrum informative-color-500"
-    },
-    "informativeColor-600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.4470588235294118, 0.6196078431372549, 0.9921568627450981
-        ]
-      },
-      "$description": "Spectrum informative-color-600"
-    },
-    "informativeColor-700": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.36470588235294116, 0.5372549019607843, 1]
-      },
-      "$description": "Spectrum informative-color-700"
-    },
-    "informativeColor-800": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.29411764705882354, 0.4588235294117647, 1]
-      },
-      "$description": "Spectrum informative-color-800"
-    },
-    "informativeColor-900": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.23137254901960785, 0.38823529411764707, 0.984313725490196
-        ]
-      },
-      "$description": "Spectrum informative-color-900"
-    },
-    "informativeColor-1000": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.15294117647058825, 0.30196078431372547, 0.9176470588235294
-        ]
-      },
-      "$description": "Spectrum informative-color-1000"
-    },
-    "informativeColor-1100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.11372549019607843, 0.24313725490196078, 0.8117647058823529
-        ]
-      },
-      "$description": "Spectrum informative-color-1100"
-    },
-    "informativeColor-1200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.08235294117647059, 0.19607843137254902, 0.6784313725490196
-        ]
-      },
-      "$description": "Spectrum informative-color-1200"
-    },
-    "informativeColor-1300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.06274509803921569, 0.1568627450980392, 0.5490196078431373
-        ]
-      },
-      "$description": "Spectrum informative-color-1300"
-    },
-    "informativeColor-1400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.047058823529411764, 0.12156862745098039, 0.4117647058823529
-        ]
-      },
-      "$description": "Spectrum informative-color-1400"
-    },
-    "informativeColor-1500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.054901960784313725, 0.09411764705882353, 0.2627450980392157
-        ]
-      },
-      "$description": "Spectrum informative-color-1500"
-    },
-    "informativeColor-1600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.027450980392156862, 0.043137254901960784, 0.11764705882352941
-        ]
-      },
-      "$description": "Spectrum informative-color-1600"
-    },
-    "negativeColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9647058823529412, 0.9607843137254902]
-      },
-      "$description": "Spectrum negative-color-100"
-    },
-    "negativeColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9215686274509803, 0.9098039215686274]
-      },
-      "$description": "Spectrum negative-color-200"
-    },
-    "negativeColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.8392156862745098, 0.8196078431372549]
-      },
-      "$description": "Spectrum negative-color-300"
-    },
-    "negativeColor-400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.7372549019607844, 0.7058823529411765]
-      },
-      "$description": "Spectrum negative-color-400"
-    },
-    "negativeColor-500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.615686274509804, 0.5686274509803921]
-      },
-      "$description": "Spectrum negative-color-500"
-    },
-    "negativeColor-600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.4627450980392157, 0.396078431372549]
-      },
-      "$description": "Spectrum negative-color-600"
-    },
-    "negativeColor-700": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.3176470588235294, 0.23921568627450981]
-      },
-      "$description": "Spectrum negative-color-700"
-    },
-    "negativeColor-800": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9411764705882353, 0.2196078431372549, 0.13725490196078433
-        ]
-      },
-      "$description": "Spectrum negative-color-800"
-    },
-    "negativeColor-900": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8431372549019608, 0.19607843137254902, 0.12549019607843137
-        ]
-      },
-      "$description": "Spectrum negative-color-900"
-    },
-    "negativeColor-1000": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.7176470588235294, 0.1568627450980392, 0.09411764705882353
-        ]
-      },
-      "$description": "Spectrum negative-color-1000"
-    },
-    "negativeColor-1100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.611764705882353, 0.12941176470588237, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum negative-color-1100"
-    },
-    "negativeColor-1200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.5058823529411764, 0.10588235294117647, 0.054901960784313725
-        ]
-      },
-      "$description": "Spectrum negative-color-1200"
-    },
-    "negativeColor-1300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.40784313725490196, 0.08235294117647059, 0.0392156862745098
-        ]
-      },
-      "$description": "Spectrum negative-color-1300"
-    },
-    "negativeColor-1400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.3137254901960784, 0.06274509803921569, 0.023529411764705882
-        ]
-      },
-      "$description": "Spectrum negative-color-1400"
-    },
-    "negativeColor-1500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.23137254901960785, 0.043137254901960784, 0.01568627450980392
-        ]
-      },
-      "$description": "Spectrum negative-color-1500"
-    },
-    "negativeColor-1600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.11372549019607843, 0.0196078431372549, 0.00784313725490196
-        ]
-      },
-      "$description": "Spectrum negative-color-1600"
-    },
-    "noticeColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9647058823529412, 0.9058823529411765]
-      },
-      "$description": "Spectrum notice-color-100"
-    },
-    "noticeColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.9254901960784314, 0.8117647058823529]
-      },
-      "$description": "Spectrum notice-color-200"
-    },
-    "noticeColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.8549019607843137, 0.6196078431372549]
-      },
-      "$description": "Spectrum notice-color-300"
-    },
-    "noticeColor-400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.7568627450980392, 0.3686274509803922]
-      },
-      "$description": "Spectrum notice-color-400"
-    },
-    "noticeColor-500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.6352941176470588, 0.07450980392156863]
-      },
-      "$description": "Spectrum notice-color-500"
-    },
-    "noticeColor-600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.9882352941176471, 0.49019607843137253, 0]
-      },
-      "$description": "Spectrum notice-color-600"
-    },
-    "noticeColor-700": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.9098039215686274, 0.41568627450980394, 0]
-      },
-      "$description": "Spectrum notice-color-700"
-    },
-    "noticeColor-800": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.8313725490196079, 0.3568627450980392, 0]
-      },
-      "$description": "Spectrum notice-color-800"
-    },
-    "noticeColor-900": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.7607843137254902, 0.3058823529411765, 0]
-      },
-      "$description": "Spectrum notice-color-900"
-    },
-    "noticeColor-1000": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.6549019607843137, 0.24313725490196078, 0]
-      },
-      "$description": "Spectrum notice-color-1000"
-    },
-    "noticeColor-1100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.5647058823529412, 0.2, 0]
-      },
-      "$description": "Spectrum notice-color-1100"
-    },
-    "noticeColor-1200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.4627450980392157, 0.1607843137254902, 0]
-      },
-      "$description": "Spectrum notice-color-1200"
-    },
-    "noticeColor-1300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.37254901960784315, 0.12549019607843137, 0]
-      },
-      "$description": "Spectrum notice-color-1300"
-    },
-    "noticeColor-1400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.28627450980392155, 0.09411764705882353, 0]
-      },
-      "$description": "Spectrum notice-color-1400"
-    },
-    "noticeColor-1500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.20392156862745098, 0.07058823529411765, 0]
-      },
-      "$description": "Spectrum notice-color-1500"
-    },
-    "noticeColor-1600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0.09803921568627451, 0.03137254901960784, 0]
-      },
-      "$description": "Spectrum notice-color-1600"
-    },
-    "positiveColor-100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.9294117647058824, 0.9882352941176471, 0.9450980392156862
-        ]
-      },
-      "$description": "Spectrum positive-color-100"
-    },
-    "positiveColor-200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.8431372549019608, 0.9686274509803922, 0.8823529411764706
-        ]
-      },
-      "$description": "Spectrum positive-color-200"
-    },
-    "positiveColor-300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.6784313725490196, 0.9333333333333333, 0.7725490196078432
-        ]
-      },
-      "$description": "Spectrum positive-color-300"
-    },
-    "positiveColor-400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.4196078431372549, 0.8901960784313725, 0.6352941176470588
-        ]
-      },
-      "$description": "Spectrum positive-color-400"
-    },
-    "positiveColor-500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.16862745098039217, 0.8196078431372549, 0.49019607843137253
-        ]
-      },
-      "$description": "Spectrum positive-color-500"
-    },
-    "positiveColor-600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07058823529411765, 0.7215686274509804, 0.403921568627451
-        ]
-      },
-      "$description": "Spectrum positive-color-600"
-    },
-    "positiveColor-700": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.043137254901960784, 0.6431372549019608, 0.36470588235294116
-        ]
-      },
-      "$description": "Spectrum positive-color-700"
-    },
-    "positiveColor-800": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.027450980392156862, 0.5764705882352941, 0.3333333333333333
-        ]
-      },
-      "$description": "Spectrum positive-color-800"
-    },
-    "positiveColor-900": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.0196078431372549, 0.5137254901960784, 0.3058823529411765
-        ]
-      },
-      "$description": "Spectrum positive-color-900"
-    },
-    "positiveColor-1000": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.011764705882352941, 0.43137254901960786, 0.27058823529411763
-        ]
-      },
-      "$description": "Spectrum positive-color-1000"
-    },
-    "positiveColor-1100": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.00784313725490196, 0.36470588235294116, 0.23529411764705882
-        ]
-      },
-      "$description": "Spectrum positive-color-1100"
-    },
-    "positiveColor-1200": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.00392156862745098, 0.2980392156862745, 0.20392156862745098
-        ]
-      },
-      "$description": "Spectrum positive-color-1200"
-    },
-    "positiveColor-1300": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0.23921568627450981, 0.17254901960784313]
-      },
-      "$description": "Spectrum positive-color-1300"
-    },
-    "positiveColor-1400": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0.1803921568627451, 0.13333333333333333]
-      },
-      "$description": "Spectrum positive-color-1400"
-    },
-    "positiveColor-1500": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0.12941176470588237, 0.09803921568627451]
-      },
-      "$description": "Spectrum positive-color-1500"
-    },
-    "positiveColor-1600": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [0, 0.058823529411764705, 0.047058823529411764]
-      },
-      "$description": "Spectrum positive-color-1600"
-    },
-    "negativeSubduedBackgroundColorHover": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.8392156862745098, 0.8196078431372549]
-      },
-      "$description": "Spectrum negative-subdued-background-color-hover"
-    },
-    "negativeSubduedBackgroundColorDown": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.8392156862745098, 0.8196078431372549]
-      },
-      "$description": "Spectrum negative-subdued-background-color-down"
-    },
-    "negativeSubduedBackgroundColorKeyFocus": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [1, 0.8392156862745098, 0.8196078431372549]
-      },
-      "$description": "Spectrum negative-subdued-background-color-key-focus"
-    },
-    "headingColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.07450980392156863, 0.07450980392156863, 0.07450980392156863
-        ]
-      },
-      "$description": "Spectrum heading-color"
-    },
-    "bodyColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum body-color"
-    },
-    "detailColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.44313725490196076, 0.44313725490196076, 0.44313725490196076
-        ]
-      },
-      "$description": "Spectrum detail-color"
-    },
-    "codeColor": {
-      "$value": {
-        "colorSpace": "srgb",
-        "components": [
-          0.1607843137254902, 0.1607843137254902, 0.1607843137254902
-        ]
-      },
-      "$description": "Spectrum code-color"
+      "$description": "Spectrum drop-shadow-dragged-key-color (light theme)"
     }
   },
-  "dimensions": {
+  "typography": {
+    "$type": "fontFamily",
+    "$description": "Typography tokens including fonts, weights, and text styles",
+    "letterSpacing": {
+      "$value": {
+        "value": 0,
+        "unit": "rem"
+      },
+      "$description": "Spectrum letter-spacing"
+    },
+    "sansSerifFontFamily": {
+      "$value": "Adobe Clean Spectrum VF",
+      "$description": "Spectrum sans-serif-font-family"
+    },
+    "serifFontFamily": {
+      "$value": "Adobe Clean Serif",
+      "$description": "Spectrum serif-font-family"
+    },
+    "cjkFontFamily": {
+      "$value": "Adobe Clean Han",
+      "$description": "Spectrum cjk-font-family"
+    },
+    "lightFontWeight": {
+      "$value": 300,
+      "$description": "Spectrum light-font-weight"
+    },
+    "regularFontWeight": {
+      "$value": 400,
+      "$description": "Spectrum regular-font-weight"
+    },
+    "mediumFontWeight": {
+      "$value": 500,
+      "$description": "Spectrum medium-font-weight"
+    },
+    "boldFontWeight": {
+      "$value": 700,
+      "$description": "Spectrum bold-font-weight"
+    },
+    "extraBoldFontWeight": {
+      "$value": 800,
+      "$description": "Spectrum extra-bold-font-weight"
+    },
+    "blackFontWeight": {
+      "$value": 900,
+      "$description": "Spectrum black-font-weight"
+    },
+    "codeFontFamily": {
+      "$value": "Source Code Pro",
+      "$description": "Spectrum code-font-family"
+    }
+  },
+  "layout": {
     "$type": "dimension",
-    "$description": "Spectrum dimension tokens",
-    "fieldLabelTopMarginSmall": {
+    "$description": "Layout tokens including spacing, corner radius, and sizing",
+    "cornerRadius0": {
       "$value": {
         "value": 0,
         "unit": "px"
       },
-      "$description": "Spectrum field-label-top-margin-small"
+      "$description": "Spectrum corner-radius-0"
     },
-    "fieldLabelTopMarginMedium": {
+    "cornerRadius75": {
       "$value": {
-        "value": 0,
+        "value": 3,
         "unit": "px"
       },
-      "$description": "Spectrum field-label-top-margin-medium"
+      "$description": "Spectrum corner-radius-75"
     },
-    "fieldLabelTopMarginLarge": {
-      "$value": {
-        "value": 0,
-        "unit": "px"
-      },
-      "$description": "Spectrum field-label-top-margin-large"
-    },
-    "fieldLabelTopMarginExtraLarge": {
-      "$value": {
-        "value": 0,
-        "unit": "px"
-      },
-      "$description": "Spectrum field-label-top-margin-extra-large"
-    },
-    "progressBarMinimumWidth": {
-      "$value": {
-        "value": 48,
-        "unit": "px"
-      },
-      "$description": "Spectrum progress-bar-minimum-width"
-    },
-    "progressBarMaximumWidth": {
-      "$value": {
-        "value": 768,
-        "unit": "px"
-      },
-      "$description": "Spectrum progress-bar-maximum-width"
-    },
-    "meterMinimumWidth": {
-      "$value": {
-        "value": 48,
-        "unit": "px"
-      },
-      "$description": "Spectrum meter-minimum-width"
-    },
-    "meterMaximumWidth": {
-      "$value": {
-        "value": 768,
-        "unit": "px"
-      },
-      "$description": "Spectrum meter-maximum-width"
-    },
-    "inLineAlertMinimumWidth": {
-      "$value": {
-        "value": 240,
-        "unit": "px"
-      },
-      "$description": "Spectrum in-line-alert-minimum-width"
-    },
-    "popoverTipWidth": {
-      "$value": {
-        "value": 16,
-        "unit": "px"
-      },
-      "$description": "Spectrum popover-tip-width"
-    },
-    "popoverTipHeight": {
-      "$value": {
-        "value": 8,
-        "unit": "px"
-      },
-      "$description": "Spectrum popover-tip-height"
-    },
-    "menuItemSectionDividerHeight": {
-      "$value": {
-        "value": 12,
-        "unit": "px"
-      },
-      "$description": "Spectrum menu-item-section-divider-height"
-    },
-    "sliderHandleGap": {
+    "cornerRadius100": {
       "$value": {
         "value": 4,
         "unit": "px"
       },
-      "$description": "Spectrum slider-handle-gap"
+      "$description": "Spectrum corner-radius-100"
     },
-    "pickerBorderWidth": {
+    "cornerRadius200": {
       "$value": {
-        "value": 1,
+        "value": 5,
         "unit": "px"
       },
-      "$description": "Spectrum picker-border-width"
+      "$description": "Spectrum corner-radius-200"
     },
-    "alertDialogMinimumWidth": {
-      "$value": {
-        "value": 288,
-        "unit": "px"
-      },
-      "$description": "Spectrum alert-dialog-minimum-width"
-    },
-    "alertDialogMaximumWidth": {
-      "$value": {
-        "value": 480,
-        "unit": "px"
-      },
-      "$description": "Spectrum alert-dialog-maximum-width"
-    },
-    "contextualHelpMinimumWidth": {
-      "$value": {
-        "value": 268,
-        "unit": "px"
-      },
-      "$description": "Spectrum contextual-help-minimum-width"
-    },
-    "colorAreaBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-area-border-width"
-    },
-    "colorWheelColorAreaMargin": {
-      "$value": {
-        "value": 12,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-wheel-color-area-margin"
-    },
-    "colorSliderBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-slider-border-width"
-    },
-    "illustratedMessageMaximumWidth": {
-      "$value": {
-        "value": 380,
-        "unit": "px"
-      },
-      "$description": "Spectrum illustrated-message-maximum-width"
-    },
-    "colorLoupeHeight": {
-      "$value": {
-        "value": 64,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-loupe-height"
-    },
-    "colorLoupeWidth": {
-      "$value": {
-        "value": 48,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-loupe-width"
-    },
-    "colorLoupeOuterBorderWidth": {
-      "$value": {
-        "value": 2,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-loupe-outer-border-width"
-    },
-    "colorLoupeInnerBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-loupe-inner-border-width"
-    },
-    "cardMinimumWidth": {
-      "$value": {
-        "value": 100,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width"
-    },
-    "cardMinimumWidthDefault": {
-      "$value": {
-        "value": 100,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-default"
-    },
-    "cardPreviewMinimumHeight": {
-      "$value": {
-        "value": 130,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-preview-minimum-height"
-    },
-    "cardSelectionBackgroundSize": {
-      "$value": {
-        "value": 40,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-selection-background-size"
-    },
-    "dropZoneWidth": {
-      "$value": {
-        "value": 428,
-        "unit": "px"
-      },
-      "$description": "Spectrum drop-zone-width"
-    },
-    "dropZoneContentMaximumWidth": {
-      "$value": {
-        "value": 380,
-        "unit": "px"
-      },
-      "$description": "Spectrum drop-zone-content-maximum-width"
-    },
-    "dropZoneBorderDashGap": {
+    "cornerRadius300": {
       "$value": {
         "value": 6,
         "unit": "px"
       },
-      "$description": "Spectrum drop-zone-border-dash-gap"
+      "$description": "Spectrum corner-radius-300"
     },
-    "accordionFocusIndicatorGap": {
-      "$value": {
-        "value": 2,
-        "unit": "px"
-      },
-      "$description": "Spectrum accordion-focus-indicator-gap"
-    },
-    "colorHandleBorderWidth": {
-      "$value": {
-        "value": 2,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-handle-border-width"
-    },
-    "colorHandleInnerBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-handle-inner-border-width"
-    },
-    "colorHandleOuterBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum color-handle-outer-border-width"
-    },
-    "tableBorderDividerWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum table-border-divider-width"
-    },
-    "inFieldButtonWidthStackedSmall": {
-      "$value": {
-        "value": 20,
-        "unit": "px"
-      },
-      "$description": "Spectrum in-field-button-width-stacked-small"
-    },
-    "inFieldButtonWidthStackedMedium": {
-      "$value": {
-        "value": 28,
-        "unit": "px"
-      },
-      "$description": "Spectrum in-field-button-width-stacked-medium"
-    },
-    "inFieldButtonWidthStackedLarge": {
-      "$value": {
-        "value": 36,
-        "unit": "px"
-      },
-      "$description": "Spectrum in-field-button-width-stacked-large"
-    },
-    "inFieldButtonWidthStackedExtraLarge": {
-      "$value": {
-        "value": 44,
-        "unit": "px"
-      },
-      "$description": "Spectrum in-field-button-width-stacked-extra-large"
-    },
-    "asteriskIconSize-75": {
-      "$value": {
-        "value": 8,
-        "unit": "px"
-      },
-      "$description": "Spectrum asterisk-icon-size-75"
-    },
-    "dividerVerticalMinimumHeight": {
-      "$value": {
-        "value": 200,
-        "unit": "px"
-      },
-      "$description": "Spectrum divider-vertical-minimum-height"
-    },
-    "dividerHorizontalMinimumWidth": {
-      "$value": {
-        "value": 200,
-        "unit": "px"
-      },
-      "$description": "Spectrum divider-horizontal-minimum-width"
-    },
-    "standardDialogMaximumWidthSmall": {
-      "$value": {
-        "value": 400,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-dialog-maximum-width-small"
-    },
-    "standardDialogMinimumWidth": {
-      "$value": {
-        "value": 288,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-dialog-minimum-width"
-    },
-    "standardDialogMaximumWidthMedium": {
-      "$value": {
-        "value": 480,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-dialog-maximum-width-medium"
-    },
-    "standardDialogMaximumWidthLarge": {
-      "$value": {
-        "value": 640,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-dialog-maximum-width-large"
-    },
-    "coachIndicatorCollapsedGap": {
-      "$value": {
-        "value": 2,
-        "unit": "px"
-      },
-      "$description": "Spectrum coach-indicator-collapsed-gap"
-    },
-    "coachIndicatorExpandedGap": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum coach-indicator-expanded-gap"
-    },
-    "thumbnailOpacityCheckerboardSquareSize": {
-      "$value": {
-        "value": 4,
-        "unit": "px"
-      },
-      "$description": "Spectrum thumbnail-opacity-checkerboard-square-size"
-    },
-    "swatchGroupSpacingSpacious": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum swatch-group-spacing-spacious"
-    },
-    "avatarBorderWidth": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      },
-      "$description": "Spectrum avatar-border-width"
-    },
-    "standardPanelWidth": {
-      "$value": {
-        "value": 260,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-panel-width"
-    },
-    "standardPanelMinimumWidth": {
-      "$value": {
-        "value": 200,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-panel-minimum-width"
-    },
-    "standardPanelMaximumWidth": {
-      "$value": {
-        "value": 400,
-        "unit": "px"
-      },
-      "$description": "Spectrum standard-panel-maximum-width"
-    },
-    "illustratedMessageHorizontalMaximumWidth": {
-      "$value": {
-        "value": 535,
-        "unit": "px"
-      },
-      "$description": "Spectrum illustrated-message-horizontal-maximum-width"
-    },
-    "illustratedMessageVerticalMaximumWidth": {
-      "$value": {
-        "value": 380,
-        "unit": "px"
-      },
-      "$description": "Spectrum illustrated-message-vertical-maximum-width"
-    },
-    "barPanelWidth": {
-      "$value": {
-        "value": 56,
-        "unit": "px"
-      },
-      "$description": "Spectrum bar-panel-width"
-    },
-    "barPanelMinimumWidth": {
-      "$value": {
-        "value": 40,
-        "unit": "px"
-      },
-      "$description": "Spectrum bar-panel-minimum-width"
-    },
-    "barPanelMaximumWidth": {
-      "$value": {
-        "value": 72,
-        "unit": "px"
-      },
-      "$description": "Spectrum bar-panel-maximum-width"
-    },
-    "barPanelSpacingExtraSpacious": {
-      "$value": {
-        "value": 20,
-        "unit": "px"
-      },
-      "$description": "Spectrum bar-panel-spacing-extra-spacious"
-    },
-    "ratingWidthSmall": {
-      "$value": {
-        "value": 104,
-        "unit": "px"
-      },
-      "$description": "Spectrum rating-width-small"
-    },
-    "ratingWidthMedium": {
-      "$value": {
-        "value": 128,
-        "unit": "px"
-      },
-      "$description": "Spectrum rating-width-medium"
-    },
-    "segmentedControlSelectionBorderWidth": {
-      "$value": {
-        "value": 2,
-        "unit": "px"
-      },
-      "$description": "Spectrum segmented-control-selection-border-width"
-    },
-    "sliderHandlePrecisionWidth": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum slider-handle-precision-width"
-    },
-    "sliderTrackHeightMedium": {
-      "$value": {
-        "value": 4,
-        "unit": "px"
-      },
-      "$description": "Spectrum slider-track-height-medium"
-    },
-    "sliderTrackHeightLarge": {
-      "$value": {
-        "value": 16,
-        "unit": "px"
-      },
-      "$description": "Spectrum slider-track-height-large"
-    },
-    "actionBarMinimumWidth": {
-      "$value": {
-        "value": 176,
-        "unit": "px"
-      },
-      "$description": "Spectrum action-bar-minimum-width"
-    },
-    "cardSelectionBackgroundSizeSmall": {
-      "$value": {
-        "value": 22,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-selection-background-size-small"
-    },
-    "cardSelectionBackgroundSizeMedium": {
-      "$value": {
-        "value": 24,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-selection-background-size-medium"
-    },
-    "cardSelectionBackgroundSizeLarge": {
-      "$value": {
-        "value": 26,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-selection-background-size-large"
-    },
-    "cardSelectionBackgroundSizeExtraLarge": {
-      "$value": {
-        "value": 28,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-selection-background-size-extra-large"
-    },
-    "cardMinimumWidthExtraSmall": {
-      "$value": {
-        "value": 100,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-extra-small"
-    },
-    "cardMinimumWidthSmall": {
-      "$value": {
-        "value": 150,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-small"
-    },
-    "cardMinimumWidthMedium": {
-      "$value": {
-        "value": 200,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-medium"
-    },
-    "cardMinimumWidthLarge": {
-      "$value": {
-        "value": 270,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-large"
-    },
-    "cardMinimumWidthExtraLarge": {
-      "$value": {
-        "value": 340,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-width-extra-large"
-    },
-    "cardDefaultWidthExtraSmall": {
-      "$value": {
-        "value": 120,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-default-width-extra-small"
-    },
-    "cardDefaultWidthSmall": {
-      "$value": {
-        "value": 180,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-default-width-small"
-    },
-    "cardDefaultWidthMedium": {
-      "$value": {
-        "value": 240,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-default-width-medium"
-    },
-    "cardDefaultWidthLarge": {
-      "$value": {
-        "value": 320,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-default-width-large"
-    },
-    "cardDefaultWidthExtraLarge": {
-      "$value": {
-        "value": 400,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-default-width-extra-large"
-    },
-    "cardMaximumWidthExtraSmall": {
-      "$value": {
-        "value": 140,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-maximum-width-extra-small"
-    },
-    "cardMaximumWidthSmall": {
-      "$value": {
-        "value": 210,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-maximum-width-small"
-    },
-    "cardMaximumWidthMedium": {
-      "$value": {
-        "value": 280,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-maximum-width-medium"
-    },
-    "cardMaximumWidthLarge": {
-      "$value": {
-        "value": 370,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-maximum-width-large"
-    },
-    "cardMaximumWidthExtraLarge": {
-      "$value": {
-        "value": 460,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-maximum-width-extra-large"
-    },
-    "cardMinimumHeightExtraSmall": {
-      "$value": {
-        "value": 90,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-height-extra-small"
-    },
-    "cardMinimumHeightSmall": {
-      "$value": {
-        "value": 135,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-height-small"
-    },
-    "cardMinimumHeightMedium": {
-      "$value": {
-        "value": 180,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-height-medium"
-    },
-    "cardMinimumHeightLarge": {
-      "$value": {
-        "value": 240,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-height-large"
-    },
-    "cardMinimumHeightExtraLarge": {
-      "$value": {
-        "value": 300,
-        "unit": "px"
-      },
-      "$description": "Spectrum card-minimum-height-extra-large"
-    },
-    "collectionCardMinimumHeightExtraSmall": {
-      "$value": {
-        "value": 88,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-extra-small"
-    },
-    "collectionCardMinimumHeightSmall": {
-      "$value": {
-        "value": 124,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-small"
-    },
-    "collectionCardMinimumHeightMedium": {
-      "$value": {
-        "value": 157,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-medium"
-    },
-    "collectionCardMinimumHeightLarge": {
-      "$value": {
-        "value": 202,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-large"
-    },
-    "collectionCardMinimumHeightExtraLarge": {
-      "$value": {
-        "value": 249,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-extra-large"
-    },
-    "collectionCardMinimumHeightHeroExtraSmall": {
-      "$value": {
-        "value": 168,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-hero-extra-small"
-    },
-    "collectionCardMinimumHeightHeroSmall": {
-      "$value": {
-        "value": 243,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-hero-small"
-    },
-    "collectionCardMinimumHeightHeroMedium": {
-      "$value": {
-        "value": 317,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-hero-medium"
-    },
-    "collectionCardMinimumHeightHeroLarge": {
-      "$value": {
-        "value": 414,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-hero-large"
-    },
-    "collectionCardMinimumHeightHeroExtraLarge": {
-      "$value": {
-        "value": 514,
-        "unit": "px"
-      },
-      "$description": "Spectrum collection-card-minimum-height-hero-extra-large"
-    },
-    "userCardMinimumHeightSmall": {
-      "$value": {
-        "value": 192,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-small"
-    },
-    "userCardMinimumHeightMedium": {
-      "$value": {
-        "value": 202,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-medium"
-    },
-    "userCardMinimumHeightLarge": {
-      "$value": {
-        "value": 219,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-large"
-    },
-    "userCardMinimumHeightExtraLarge": {
-      "$value": {
-        "value": 236,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-extra-large"
-    },
-    "userCardMinimumHeightTitleBelowSmall": {
-      "$value": {
-        "value": 212,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-title-below-small"
-    },
-    "userCardMinimumHeightTitleBelowMedium": {
-      "$value": {
-        "value": 224,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-title-below-medium"
-    },
-    "userCardMinimumHeightTitleBelowLarge": {
-      "$value": {
-        "value": 244,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-title-below-large"
-    },
-    "userCardMinimumHeightTitleBelowExtraLarge": {
-      "$value": {
-        "value": 263,
-        "unit": "px"
-      },
-      "$description": "Spectrum user-card-minimum-height-title-below-extra-large"
-    },
-    "segmentedControlItemMaximumWidth": {
-      "$value": {
-        "value": 265,
-        "unit": "px"
-      },
-      "$description": "Spectrum segmented-control-item-maximum-width"
-    },
-    "steplistStepDefaultWidthSmall": {
-      "$value": {
-        "value": 46,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-width-small"
-    },
-    "steplistStepDefaultWidthMedium": {
-      "$value": {
-        "value": 54,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-width-medium"
-    },
-    "steplistStepDefaultWidthLarge": {
-      "$value": {
-        "value": 70,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-width-large"
-    },
-    "steplistStepDefaultWidthExtraLarge": {
-      "$value": {
-        "value": 78,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-width-extra-large"
-    },
-    "steplistStepDefaultHeightSmall": {
-      "$value": {
-        "value": 46,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-height-small"
-    },
-    "steplistStepDefaultHeightMedium": {
-      "$value": {
-        "value": 54,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-height-medium"
-    },
-    "steplistStepDefaultHeightLarge": {
-      "$value": {
-        "value": 70,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-height-large"
-    },
-    "steplistStepDefaultHeightExtraLarge": {
-      "$value": {
-        "value": 78,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-default-height-extra-large"
-    },
-    "steplistVisualSizeSmall": {
-      "$value": {
-        "value": 8,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-visual-size-small"
-    },
-    "steplistVisualSizeMedium": {
-      "$value": {
-        "value": 16,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-visual-size-medium"
-    },
-    "steplistVisualSizeLarge": {
-      "$value": {
-        "value": 24,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-visual-size-large"
-    },
-    "steplistVisualSizeExtraLarge": {
-      "$value": {
-        "value": 32,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-visual-size-extra-large"
-    },
-    "steplistStepToTrackSizeSmall": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum steplist-step-to-track-size-small"
-    },
-    "steplistStepToTrackSizeMedium": {
+    "cornerRadius400": {
       "$value": {
         "value": 7,
         "unit": "px"
       },
-      "$description": "Spectrum steplist-step-to-track-size-medium"
+      "$description": "Spectrum corner-radius-400"
     },
-    "steplistStepToTrackSizeLarge": {
+    "cornerRadius500": {
       "$value": {
         "value": 8,
         "unit": "px"
       },
-      "$description": "Spectrum steplist-step-to-track-size-large"
+      "$description": "Spectrum corner-radius-500"
     },
-    "steplistStepToTrackSizeExtraLarge": {
+    "cornerRadius600": {
       "$value": {
         "value": 9,
         "unit": "px"
       },
-      "$description": "Spectrum steplist-step-to-track-size-extra-large"
+      "$description": "Spectrum corner-radius-600"
     },
-    "singleCalendarPopoverMinimumWidth": {
+    "cornerRadius700": {
       "$value": {
-        "value": 320,
+        "value": 10,
         "unit": "px"
       },
-      "$description": "Spectrum single-calendar-popover-minimum-width"
+      "$description": "Spectrum corner-radius-700"
     },
-    "singleCalendarPopoverMinimumHeight": {
+    "cornerRadius800": {
       "$value": {
-        "value": 320,
+        "value": 16,
         "unit": "px"
       },
-      "$description": "Spectrum single-calendar-popover-minimum-height"
+      "$description": "Spectrum corner-radius-800"
     },
-    "doubleCalendarPopoverMinimumWidth": {
-      "$value": {
-        "value": 616,
-        "unit": "px"
-      },
-      "$description": "Spectrum double-calendar-popover-minimum-width"
-    },
-    "doubleCalendarPopoverMinimumHeight": {
-      "$value": {
-        "value": 320,
-        "unit": "px"
-      },
-      "$description": "Spectrum double-calendar-popover-minimum-height"
-    },
-    "tripleCalendarPopoverMinimumWidth": {
-      "$value": {
-        "value": 912,
-        "unit": "px"
-      },
-      "$description": "Spectrum triple-calendar-popover-minimum-width"
-    },
-    "tripleCalendarPopoverMinimumHeight": {
-      "$value": {
-        "value": 320,
-        "unit": "px"
-      },
-      "$description": "Spectrum triple-calendar-popover-minimum-height"
-    },
-    "dateFieldMinimumWidth": {
-      "$value": {
-        "value": 152,
-        "unit": "px"
-      },
-      "$description": "Spectrum date-field-minimum-width"
-    },
-    "datePickerMinimumWidth": {
-      "$value": {
-        "value": 152,
-        "unit": "px"
-      },
-      "$description": "Spectrum date-picker-minimum-width"
-    },
-    "segmentedTextFieldGap": {
-      "$value": {
-        "value": 0,
-        "unit": "px"
-      },
-      "$description": "Spectrum segmented-text-field-gap"
-    },
-    "gripperIconSize-100": {
-      "$value": {
-        "value": 24,
-        "unit": "px"
-      },
-      "$description": "Spectrum gripper-icon-size-100"
-    },
-    "spacing-50": {
+    "spacing50": {
       "$value": {
         "value": 2,
         "unit": "px"
       },
       "$description": "Spectrum spacing-50"
     },
-    "spacing-75": {
+    "spacing75": {
       "$value": {
         "value": 4,
         "unit": "px"
       },
       "$description": "Spectrum spacing-75"
     },
-    "spacing-100": {
+    "spacing100": {
       "$value": {
         "value": 8,
         "unit": "px"
       },
       "$description": "Spectrum spacing-100"
     },
-    "spacing-200": {
+    "spacing200": {
       "$value": {
         "value": 12,
         "unit": "px"
       },
       "$description": "Spectrum spacing-200"
     },
-    "spacing-300": {
+    "spacing300": {
       "$value": {
         "value": 16,
         "unit": "px"
       },
       "$description": "Spectrum spacing-300"
     },
-    "spacing-400": {
+    "spacing400": {
       "$value": {
         "value": 24,
         "unit": "px"
       },
       "$description": "Spectrum spacing-400"
     },
-    "spacing-500": {
+    "spacing500": {
       "$value": {
         "value": 32,
         "unit": "px"
       },
       "$description": "Spectrum spacing-500"
     },
-    "spacing-600": {
+    "spacing600": {
       "$value": {
         "value": 40,
         "unit": "px"
       },
       "$description": "Spectrum spacing-600"
     },
-    "spacing-700": {
+    "spacing700": {
       "$value": {
         "value": 48,
         "unit": "px"
       },
       "$description": "Spectrum spacing-700"
     },
-    "spacing-800": {
+    "spacing800": {
       "$value": {
         "value": 64,
         "unit": "px"
       },
       "$description": "Spectrum spacing-800"
     },
-    "spacing-900": {
+    "spacing900": {
       "$value": {
         "value": 80,
         "unit": "px"
       },
       "$description": "Spectrum spacing-900"
     },
-    "spacing-1000": {
+    "spacing1000": {
       "$value": {
         "value": 96,
         "unit": "px"
       },
       "$description": "Spectrum spacing-1000"
+    },
+    "labelToDescription0": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
+      "$description": "Spectrum label-to-description-0"
+    },
+    "focusIndicatorThickness": {
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      },
+      "$description": "Spectrum focus-indicator-thickness"
     },
     "focusIndicatorGap": {
       "$value": {
@@ -2900,26 +4427,40 @@
       },
       "$description": "Spectrum focus-indicator-gap"
     },
-    "borderWidth-100": {
+    "sideFocusIndicator": {
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$description": "Spectrum side-focus-indicator"
+    },
+    "borderWidth100": {
       "$value": {
         "value": 1,
         "unit": "px"
       },
       "$description": "Spectrum border-width-100"
     },
-    "borderWidth-200": {
+    "borderWidth200": {
       "$value": {
         "value": 2,
         "unit": "px"
       },
       "$description": "Spectrum border-width-200"
     },
-    "borderWidth-400": {
+    "borderWidth400": {
       "$value": {
         "value": 4,
         "unit": "px"
       },
       "$description": "Spectrum border-width-400"
+    },
+    "fieldEdgeToVisualQuiet": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
+      "$description": "Spectrum field-edge-to-visual-quiet"
     },
     "sideLabelCharacterCountTopMarginSmall": {
       "$value": {
@@ -2949,6 +4490,13 @@
       },
       "$description": "Spectrum side-label-character-count-top-margin-extra-large"
     },
+    "textUnderlineThickness": {
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      },
+      "$description": "Spectrum text-underline-thickness"
+    },
     "textUnderlineGap": {
       "$value": {
         "value": 1,
@@ -2963,110 +4511,68 @@
       },
       "$description": "Spectrum component-size-minimum-perspective-down"
     },
-    "cornerRadiusSmallSizeSmall": {
-      "$value": {
-        "value": 3,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-small-size-small"
-    },
-    "cornerRadiusSmallSizeMedium": {
-      "$value": {
-        "value": 4,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-small-size-medium"
-    },
-    "cornerRadiusSmallSizeLarge": {
-      "$value": {
-        "value": 5,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-small-size-large"
-    },
-    "cornerRadiusSmallSizeExtraLarge": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-small-size-extra-large"
-    },
-    "cornerRadiusMediumSizeExtraSmall": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-medium-size-extra-small"
-    },
-    "cornerRadiusMediumSizeSmall": {
-      "$value": {
-        "value": 7,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-medium-size-small"
-    },
-    "cornerRadiusMediumSizeMedium": {
-      "$value": {
-        "value": 8,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-medium-size-medium"
-    },
-    "cornerRadiusMediumSizeLarge": {
-      "$value": {
-        "value": 9,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-medium-size-large"
-    },
-    "cornerRadiusMediumSizeExtraLarge": {
-      "$value": {
-        "value": 10,
-        "unit": "px"
-      },
-      "$description": "Spectrum corner-radius-medium-size-extra-large"
-    },
-    "dropShadowEmphasizedDefaultX": {
+    "dropShadowX100": {
       "$value": {
         "value": 0,
         "unit": "px"
       },
-      "$description": "Spectrum drop-shadow-emphasized-default-x"
+      "$description": "Spectrum drop-shadow-x-100"
     },
-    "dropShadowEmphasizedDefaultY": {
+    "dropShadowX200": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
+      "$description": "Spectrum drop-shadow-x-200"
+    },
+    "dropShadowX300": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
+      "$description": "Spectrum drop-shadow-x-300"
+    },
+    "dropShadowY100": {
       "$value": {
         "value": 1,
         "unit": "px"
       },
-      "$description": "Spectrum drop-shadow-emphasized-default-y"
+      "$description": "Spectrum drop-shadow-y-100"
     },
-    "dropShadowEmphasizedDefaultBlur": {
-      "$value": {
-        "value": 6,
-        "unit": "px"
-      },
-      "$description": "Spectrum drop-shadow-emphasized-default-blur"
-    },
-    "dropShadowEmphasizedHoverX": {
-      "$value": {
-        "value": 0,
-        "unit": "px"
-      },
-      "$description": "Spectrum drop-shadow-emphasized-hover-x"
-    },
-    "dropShadowEmphasizedHoverY": {
+    "dropShadowY200": {
       "$value": {
         "value": 2,
         "unit": "px"
       },
-      "$description": "Spectrum drop-shadow-emphasized-hover-y"
+      "$description": "Spectrum drop-shadow-y-200"
     },
-    "dropShadowEmphasizedHoverBlur": {
+    "dropShadowY300": {
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      },
+      "$description": "Spectrum drop-shadow-y-300"
+    },
+    "dropShadowBlur100": {
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      },
+      "$description": "Spectrum drop-shadow-blur-100"
+    },
+    "dropShadowBlur200": {
       "$value": {
         "value": 8,
         "unit": "px"
       },
-      "$description": "Spectrum drop-shadow-emphasized-hover-blur"
+      "$description": "Spectrum drop-shadow-blur-200"
+    },
+    "dropShadowBlur300": {
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      },
+      "$description": "Spectrum drop-shadow-blur-300"
     },
     "componentSizeMaximumPerspectiveDown": {
       "$value": {
@@ -3074,171 +4580,6 @@
         "unit": "px"
       },
       "$description": "Spectrum component-size-maximum-perspective-down"
-    },
-    "letterSpacing": {
-      "$value": {
-        "value": 0,
-        "unit": "rem"
-      },
-      "$description": "Spectrum letter-spacing"
-    },
-    "cjkLetterSpacing": {
-      "$value": {
-        "value": 0,
-        "unit": "rem"
-      },
-      "$description": "Spectrum cjk-letter-spacing"
-    },
-    "detailLetterSpacing": {
-      "$value": {
-        "value": 0.06,
-        "unit": "rem"
-      },
-      "$description": "Spectrum detail-letter-spacing"
-    }
-  },
-  "numbers": {
-    "$type": "number",
-    "$description": "Spectrum numeric tokens",
-    "overlayOpacity": {
-      "$value": 0.4,
-      "$description": "Spectrum overlay-opacity"
-    },
-    "opacityDisabled": {
-      "$value": 0.3,
-      "$description": "Spectrum opacity-disabled"
-    },
-    "backgroundOpacityDefault": {
-      "$value": 0,
-      "$description": "Spectrum background-opacity-default"
-    },
-    "backgroundOpacityHover": {
-      "$value": 0.1,
-      "$description": "Spectrum background-opacity-hover"
-    },
-    "backgroundOpacityDown": {
-      "$value": 0.1,
-      "$description": "Spectrum background-opacity-down"
-    },
-    "backgroundOpacityKeyFocus": {
-      "$value": 0.1,
-      "$description": "Spectrum background-opacity-key-focus"
-    },
-    "swatchBorderOpacity": {
-      "$value": 0.42,
-      "$description": "Spectrum swatch-border-opacity"
-    },
-    "swatchDisabledIconBorderOpacity": {
-      "$value": 0.42,
-      "$description": "Spectrum swatch-disabled-icon-border-opacity"
-    },
-    "thumbnailBorderOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum thumbnail-border-opacity"
-    },
-    "thumbnailOpacityDisabled": {
-      "$value": 0.3,
-      "$description": "Spectrum thumbnail-opacity-disabled"
-    },
-    "avatarOpacityDisabled": {
-      "$value": 0.3,
-      "$description": "Spectrum avatar-opacity-disabled"
-    },
-    "colorAreaBorderOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum color-area-border-opacity"
-    },
-    "colorSliderBorderOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum color-slider-border-opacity"
-    },
-    "cardSelectionBackgroundColorOpacity": {
-      "$value": 0.95,
-      "$description": "Spectrum card-selection-background-color-opacity"
-    },
-    "dropZoneBackgroundColorOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum drop-zone-background-color-opacity"
-    },
-    "dropZoneBackgroundColorOpacityFilled": {
-      "$value": 0.3,
-      "$description": "Spectrum drop-zone-background-color-opacity-filled"
-    },
-    "colorHandleInnerBorderOpacity": {
-      "$value": 0.42,
-      "$description": "Spectrum color-handle-inner-border-opacity"
-    },
-    "colorHandleOuterBorderOpacity": {
-      "$value": 0.42,
-      "$description": "Spectrum color-handle-outer-border-opacity"
-    },
-    "tableRowHoverOpacity": {
-      "$value": 0.07,
-      "$description": "Spectrum table-row-hover-opacity"
-    },
-    "tableSelectedRowBackgroundOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum table-selected-row-background-opacity"
-    },
-    "tableSelectedRowBackgroundOpacityNonEmphasized": {
-      "$value": 0.1,
-      "$description": "Spectrum table-selected-row-background-opacity-non-emphasized"
-    },
-    "tableRowDownOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum table-row-down-opacity"
-    },
-    "tableSelectedRowBackgroundOpacityHover": {
-      "$value": 0.15,
-      "$description": "Spectrum table-selected-row-background-opacity-hover"
-    },
-    "tableSelectedRowBackgroundOpacityNonEmphasizedHover": {
-      "$value": 0.15,
-      "$description": "Spectrum table-selected-row-background-opacity-non-emphasized-hover"
-    },
-    "popoverBorderOpacity": {
-      "$value": 0,
-      "$description": "Spectrum popover-border-opacity"
-    },
-    "colorWheelBorderOpacity": {
-      "$value": 0.1,
-      "$description": "Spectrum color-wheel-border-opacity"
-    },
-    "menuItemBackgroundOpacity": {
-      "$value": 0,
-      "$description": "Spectrum menu-item-background-opacity"
-    },
-    "coachIndicatorOpacity": {
-      "$value": 0.2,
-      "$description": "Spectrum coach-indicator-opacity"
-    },
-    "swatchGroupBorderOpacity": {
-      "$value": 0.2,
-      "$description": "Spectrum swatch-group-border-opacity"
-    },
-    "treeViewSelectedRowBackgroundOpacityEmphasized": {
-      "$value": 0.1,
-      "$description": "Spectrum tree-view-selected-row-background-opacity-emphasized"
-    },
-    "treeViewSelectedRowBackgroundOpacityEmphasizedHover": {
-      "$value": 0.15,
-      "$description": "Spectrum tree-view-selected-row-background-opacity-emphasized-hover"
-    },
-    "stackItemSelectedBackgroundOpacityEmphasized": {
-      "$value": 0.1,
-      "$description": "Spectrum stack-item-selected-background-opacity-emphasized"
-    },
-    "stackItemSelectedBackgroundOpacityEmphasizedHover": {
-      "$value": 0.15,
-      "$description": "Spectrum stack-item-selected-background-opacity-emphasized-hover"
-    },
-    "stackItemSelectedBackgroundOpacityEmphasizedDown": {
-      "$value": 0.15,
-      "$description": "Spectrum stack-item-selected-background-opacity-emphasized-down"
-    },
-    "stackItemSelectedBackgroundOpacityEmphasizedKeyFocus": {
-      "$value": 0.15,
-      "$description": "Spectrum stack-item-selected-background-opacity-emphasized-key-focus"
     }
   }
 }
