@@ -198,6 +198,31 @@ const convertToken = (
   return null;
 };
 
+// Extract subgroup and token name from a token name
+const parseTokenName = (
+  tokenName: string,
+): { group: string | null; name: string } => {
+  // Convert to camelCase first
+  const camelName = tokenName.replace(/-([a-z0-9])/g, (g) =>
+    g[1].toUpperCase(),
+  );
+
+  // Common patterns for grouping:
+  // gray100 -> group: gray, name: 100
+  // transparentWhite25 -> group: transparentWhite, name: 25
+  // cornerRadius75 -> group: cornerRadius, name: 75
+  // workflowIconSize100 -> group: workflowIconSize, name: 100
+
+  // Match pattern: [prefix][number]
+  const match = camelName.match(/^([a-z][a-zA-Z]*?)(\d+)$/);
+  if (match) {
+    return { group: match[1], name: match[2] };
+  }
+
+  // For tokens that don't match the pattern (like "white", "black"), no group
+  return { group: null, name: camelName };
+};
+
 // Process a source file and convert its tokens
 const processSourceFile = async (
   fileName: string,
@@ -224,11 +249,20 @@ const processSourceFile = async (
   for (const [tokenName, tokenData] of Object.entries(sourceTokens)) {
     const converted = convertToken(tokenName, tokenData, allowPrivate);
     if (converted) {
-      // Create a clean token name (replace hyphens with camelCase)
-      const cleanName = tokenName.replace(/-([a-z0-9])/g, (g) =>
-        g[1].toUpperCase(),
-      );
-      category[cleanName] = converted;
+      const { group, name } = parseTokenName(tokenName);
+
+      if (group) {
+        // Create subgroup if it doesn't exist
+        if (!category[group]) {
+          category[group] = {
+            $type: categoryType,
+          };
+        }
+        category[group][name] = converted;
+      } else {
+        // No group, add directly to category
+        category[name] = converted;
+      }
       count++;
     }
   }
